@@ -32,7 +32,7 @@ gulp.task('vendor-scripts', function() {
 
 gulp.task('css', function () {
   return gulp
-    .src('source/sass/style.scss')
+    .src('source/sass/main.scss')
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
