@@ -15,6 +15,10 @@ $color-red:                       #d57c68;
 $color-green:                     #78b17c;
 $color-gray:                      #a7a7a7;
 
+$color-font-base:                 #485060;
+$color-font-decoration:           #033a9f;
+$color-font-gray:                 #697387;
+
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
@@ -23,8 +27,8 @@ $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0
 //---------------------------------
 
 $font-family-base:                  "SF UI Text", "Arial", sans-serif;
-$font-family-decoration-1:          "PF Bague Sans", "Arial", sans-serif;
-$font-family-decoration-2:          "Montserrat", "Arial", sans-serif;
+$font-family-secondary-1:           "PF Bague Sans", "Arial", sans-serif;
+$font-family-secondary-2:           "Montserrat", "Arial", sans-serif;
 
 // Animation
 //---------------------------------

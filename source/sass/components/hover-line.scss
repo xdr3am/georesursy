@@ -1,0 +1,50 @@
+.hover-line {
+  position: relative;
+  outline: none;
+  transition: $default-transition-settings;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: $color-font-decoration;
+    transition: $default-transition-settings;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    right: 50%;
+    width: 0;
+    height: 2px;
+    background-color: $color-font-decoration;
+    transition: $default-transition-settings;
+  }
+
+  &--gray {
+    &::before {
+      height: 2px;
+      background-color: $color-font-gray;
+    }
+
+    &::after {
+      height: 2px;
+      background-color: $color-font-gray;
+    }
+  }
+}
+
+.hover-line:hover::before,
+.hover-line:focus::before,
+.hover-line:hover::after,
+.hover-line:focus::after {
+  width: 50%;
+}
+
+.hover-line:active {
+  opacity: 0.5;
+}
