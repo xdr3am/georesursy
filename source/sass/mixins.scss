@@ -30,6 +30,12 @@
   }
 }
 
+@mixin viewport--xs {
+  @media (max-width: 550px) {
+    @content;
+  }
+}
+
 // Mobile first
 
 /* @mixin viewport--md {
