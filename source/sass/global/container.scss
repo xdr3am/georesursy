@@ -4,4 +4,8 @@
   margin: 0 auto;
   padding: 0 50px;
   box-sizing: border-box;
+
+  @include viewport--md {
+    padding: 0 20px;
+  }
 }

@@ -1,0 +1,14 @@
+.dropdown {
+  &--mobile {
+    .dropdown__content {
+    @include viewport--sm {
+      display: none;
+
+      &--active {
+        display: flex;
+      }
+    }
+  }
+  }
+}
+

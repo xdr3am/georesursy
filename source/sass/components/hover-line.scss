@@ -10,8 +10,12 @@
     left: 50%;
     width: 0;
     height: 2px;
-    background-color: $color-font-decoration;
+    background-color: $color-decoration;
     transition: $default-transition-settings;
+
+    @include viewport--sm {
+      display: none;
+    }
   }
 
   &::after {
@@ -21,19 +25,31 @@
     right: 50%;
     width: 0;
     height: 2px;
-    background-color: $color-font-decoration;
+    background-color: $color-decoration;
     transition: $default-transition-settings;
+
+    @include viewport--sm {
+      display: none;
+    }
   }
 
   &--gray {
     &::before {
       height: 2px;
       background-color: $color-font-gray;
+
+      @include viewport--sm {
+        display: none;
+      }
     }
 
     &::after {
       height: 2px;
       background-color: $color-font-gray;
+
+      @include viewport--sm {
+        display: none;
+      }
     }
   }
 }

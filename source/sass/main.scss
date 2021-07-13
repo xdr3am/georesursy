@@ -17,9 +17,13 @@
 //---------------------------------
 
 @import "components/hover-line";
+@import "components/btn";
+@import "components/modal";
+@import "components/dropdown";
 
 // Blocks
 //---------------------------------
 
 @import "blocks/header";
-@import "blocks/main-nav"
+@import "blocks/main-nav";
+@import "blocks/login";
