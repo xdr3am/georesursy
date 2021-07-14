@@ -3,8 +3,8 @@
     <path d="M12.704 6.667V.57H3.701L1 3.428V16h11.704v-3.048"></path>
     <path d="M1 3.429h2.881V.38m.541 6.097h4.682M4.422 8.38h4.682m-4.682 1.906h4.682m1.224.416l4.178-7.654 1.871 1.143-4.177 7.654-1.98 1.342.108-2.485zm6.494-5.801c-.292.189-.925.724-1.12 1.359-.244.794-.23 1.116-.424 1.47l-.257.47"></path>
   </symbol>
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" id="icon-arrow-left-long">
-    <path d="M.646 3.646a.5.5 0 000 .708l3.182 3.182a.5.5 0 10.708-.708L1.707 4l2.829-2.828a.5.5 0 10-.708-.708L.646 3.646zM1 4.5h29v-1H1v1z" fill="#033A9F"></path>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" id="icon-arrow-left-long">
+    <path d="M.646 3.646a.5.5 0 000 .708l3.182 3.182a.5.5 0 10.708-.708L1.707 4l2.829-2.828a.5.5 0 10-.708-.708L.646 3.646zM1 4.5h29v-1H1v1z"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 8" id="icon-arrow-left">
     <path d="M.727 3.78a.5.5 0 000 .706l3.182 3.182a.5.5 0 10.707-.707L1.787 4.133l2.829-2.829a.5.5 0 00-.707-.707L.727 3.78zm.353.853h16.015v-1H1.08v1z" fill="#033A9F"></path>
@@ -12,8 +12,8 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" id="icon-arrow-right-long">
     <path d="M29.354 4.354a.5.5 0 000-.708L26.172.464a.5.5 0 10-.707.708L28.293 4l-2.828 2.828a.5.5 0 10.707.708l3.182-3.182zM0 4.5h29v-1H0v1z"></path>
   </symbol>
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 8" id="icon-arrow-right">
-    <path d="M16.449 4.486a.5.5 0 000-.707L13.267.597a.5.5 0 10-.707.707l2.828 2.829L12.56 6.96a.5.5 0 10.707.707l3.182-3.182zM.08 4.633h16.015v-1H.08v1z" fill="#033A9F"></path>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 8" id="icon-arrow-right">
+    <path d="M16.449 4.486a.5.5 0 000-.707L13.267.597a.5.5 0 10-.707.707l2.828 2.829L12.56 6.96a.5.5 0 10.707.707l3.182-3.182zM.08 4.633h16.015v-1H.08v1z"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 14" id="icon-download">
     <path d="M1 6v5a2 2 0 002 2h17.39a2 2 0 002-2V6" stroke="#C9CCD7"></path>

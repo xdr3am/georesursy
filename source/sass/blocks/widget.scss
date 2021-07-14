@@ -1,0 +1,99 @@
+.widget {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+
+  @include viewport--sm {
+    max-width: none;
+  }
+}
+
+.widget__logo-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  @include viewport--sm {
+    width: 100%;
+  }
+
+  @include viewport--xs {
+    justify-content: space-evenly;
+  }
+}
+
+.widget__logo-item {
+  margin-bottom: 27px;
+
+  @include viewport--sm {
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+}
+
+.widget__logo {
+  outline: none;
+  img {
+    vertical-align: middle;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: $default-transition-settings;
+  }
+
+  &:hover,
+  &:focus {
+    img {
+      -webkit-filter: none;
+      -moz-filter: none;
+      -ms-filter: none;
+      -o-filter: none;
+      filter: none;
+      opacity: 1;
+    }
+  }
+}
+
+.widget__container {
+  margin-bottom: 22px;
+
+  @include viewport--sm {
+    display: none;
+  }
+}
+
+.widget__georesursy {
+  outline: none;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: $default-transition-settings;
+
+  &:hover,
+  &:focus {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none;
+    opacity: 1;
+  }
+}
+
+.widget__btn {
+  @include viewport--sm {
+    margin-top: 5px;
+    align-self: flex-start;
+  }
+}

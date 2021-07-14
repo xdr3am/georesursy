@@ -4,6 +4,59 @@
   outline: none;
   transition: $default-transition-settings;
 
+  &--border {
+    align-items: center;
+    justify-content: center;
+    padding: 3px 14px;
+    border: 1px solid $color-decoration;
+    font-family: $font-family-base;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: $color-decoration;
+    transition: $default-transition-settings;
+
+    &:hover,
+    &:focus {
+      background-color: $color-decoration;
+      color: $color-font-alt;
+    }
+  }
+
+  &--arrow {
+    padding: 12px;
+    font-size: 13px;
+    line-height: 18px;
+
+    svg {
+      margin-left: 19px;
+      fill: $color-decoration;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 39px;
+      width: 1px;
+      height: 100%;
+      background-color: $color-decoration;
+    }
+
+    &:hover,
+    &:focus {
+      svg {
+        fill: $color-font-alt;
+      }
+    }
+  }
+
+  &--nowrap {
+    white-space: nowrap;
+  }
+
   &--white {
     padding: 10px 37px;
     background: $color-default-white;
