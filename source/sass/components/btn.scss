@@ -57,23 +57,21 @@
   }
 
   &--arrow {
-    padding: 12px;
+    justify-content: space-between;
+    padding: 0;
     font-size: 13px;
     line-height: 18px;
 
     svg {
-      margin-left: 19px;
+      display: block;
+      padding: 17px 12px;
       fill: $color-decoration;
+      border-left: 1px solid $color-decoration;
     }
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 39px;
-      width: 1px;
-      height: 100%;
-      background-color: $color-decoration;
+    span {
+      display: block;
+      padding: 12px;
     }
 
     &:hover,

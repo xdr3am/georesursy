@@ -4,7 +4,7 @@
 }
 
 .articles__container {
-  padding-top: 85px;
+  padding-top: 89px;
   padding-bottom: 25px;
 
   @include viewport--sm {
@@ -14,7 +14,7 @@
 
 .articles__title {
   padding-right: 10px;
-  margin-bottom: 42px;
+  margin-bottom: 47px;
 
   @include viewport--sm {
     margin-bottom: 15px;
@@ -49,6 +49,10 @@
   @include viewport--lg {
     grid-template-columns: 48% 48%;
     row-gap: 20px;
+  }
+
+  @include viewport--lg {
+    max-width: 900px;
   }
 
   @include viewport--sm {

@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  background: url("../../img/bg/bg-lines.png") no-repeat;
+  background: url("../img/bg/bg-lines.png") no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -19,13 +19,14 @@
   @include viewport--sm {
     flex-direction: column;
     padding-top: 97px;
+    padding-bottom: 42px;
   }
 }
 
 .promo__text-container {
   width: 100%;
   max-width: 337px;
-  margin-top: 22px;
+  margin-top: 35px;
   margin-right: 25px;
 
   @include viewport--lg {
@@ -49,14 +50,14 @@
     font-size: 15px;
     line-height: 110%;
     text-transform: uppercase;
-    color: $color-decoration
+    color: $color-decoration;
   }
 
   .promo__title {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 
     @include viewport--sm {
-      margin-bottom: 380px;
+      margin-bottom: 390px;
     }
   }
 
@@ -75,6 +76,7 @@
 
     @include viewport--sm {
       margin-right: 30px;
+      margin-bottom: 12px;
     }
   }
 
@@ -97,6 +99,7 @@
 }
 
 .promo__slider {
+  position: relative;
   width: 100%;
   max-width: 480px;
   margin-right: 15px;
