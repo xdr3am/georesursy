@@ -140,9 +140,9 @@ if (swiper) {
       callback();
     }
 
-    if (!preventScrollLock) {
-      disableScrolling();
-    }
+    // if (!preventScrollLock) {
+    //   disableScrolling();
+    // }
   };
 
   const closeModal = (modal, callback, preventScrollLock) => {
@@ -152,9 +152,9 @@ if (swiper) {
       callback();
     }
 
-    if (!preventScrollLock) {
-      setTimeout(enableScrolling, 300);
-    }
+    // if (!preventScrollLock) {
+    //   setTimeout(enableScrolling, 300);
+    // }
   };
 
   const onEscPress = (evt, modal, callback) => {

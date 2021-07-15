@@ -8,11 +8,20 @@
 .about__container {
   padding-top: 97px;
   padding-bottom: 69px;
+
+  @include viewport--sm {
+    padding-top: 38px;
+    padding-bottom: 45px;
+  }
 }
 
 .about__wrapper {
   display: flex;
   align-items: flex-start;
+
+  @include viewport--sm {
+    flex-direction: column;
+  }
 }
 
 .about__text-container {
@@ -22,10 +31,29 @@
   width: 100%;
   max-width: 300px;
   margin-right: 20px;
+
+  @include viewport--md {
+    width: 50%;
+    max-width: none;
+  }
+
+  @include viewport--sm {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 400px) {
+    max-width: 276px;
+  }
 }
 
 .about__title {
   margin-bottom: 54px;
+
+  @include viewport--sm {
+    margin-bottom: 22px;
+  }
 }
 
 .about__text {
@@ -35,16 +63,36 @@
   font-size: 16px;
   line-height: 1.4;
   color: $color-font-gray-2;
+
+  @include viewport--sm {
+    margin-left: 0;
+    margin-bottom: 21px;
+  }
 }
 
 .about__btn {
   margin-left: 30px;
+
+  @include viewport--sm {
+    margin-left: 0;
+  }
 }
 
 .about__list-container {
   margin-top: 90px;
   margin-left: 3.5%;
   margin-right: 20px;
+
+  @include viewport--md {
+    width: 50%;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  @include viewport--sm {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 .about__list {
@@ -53,12 +101,26 @@
   grid-template-rows: auto;
   column-gap: 58px;
   row-gap: 57px;
+
+  @include viewport--md {
+    column-gap: 20px;
+  }
+
+  @include viewport--sm {
+    grid-template-columns: 1fr;
+    gap: 47px;
+  }
 }
 
 .about__item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @include viewport--sm {
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 .about__item-image-container {
@@ -71,6 +133,10 @@
 
   svg {
     vertical-align: middle;
+  }
+
+  @include viewport--sm {
+    margin-right: 14px;
   }
 }
 
@@ -92,4 +158,8 @@
   margin-top: 18px;
   margin-right: 0;
   margin-left: auto;
+
+  @include viewport--md {
+    display: none;
+  }
 }
