@@ -1,0 +1,22 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  a {
+    display: block;
+    padding-left: 10px;
+    font-family: $font-family-secondary-1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 12px;
+    letter-spacing: 0.375em;
+    text-transform: uppercase;
+    color: $color-decoration;
+
+    &:first-of-type {
+      padding: 0;
+    }
+  }
+}
