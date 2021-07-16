@@ -29,10 +29,19 @@
   &:focus {
     color: $color-decoration;
   }
+
+  @include viewport--sm {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .archive__list-container {
-  padding: 17px 7px;
+  padding: 17px 7px 10px 7px;
+
+  @include viewport--sm {
+    padding: 17px 0;
+  }
 }
 
 .archive__list {
@@ -41,6 +50,12 @@
   grid-template-columns: repeat(auto-fill, 200px);
   grid-template-rows: auto;
   gap: 25px;
+
+  @include viewport--sm {
+    grid-template-columns: repeat(auto-fill, 103px);
+    column-gap: 12px;
+    row-gap: 13px;
+  }
 }
 
 .archive__item {
@@ -77,6 +92,11 @@
     height: auto;
     object-fit: cover;
   }
+
+  @include viewport--sm {
+    width: 103px;
+    height: 144px;
+  }
 }
 
 .archive__text {
@@ -97,4 +117,11 @@
   text-align: center;
   text-transform: uppercase;
   color: #1c1c1c;
+
+  @include viewport--sm {
+    min-width: 88px;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 14px;
+  }
 }

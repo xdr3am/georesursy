@@ -6,6 +6,12 @@
 
 .archive-page__container {
   padding-top: 213px;
+  padding-bottom: 56px;
+
+  @include viewport--sm {
+    padding-top: 113px;
+    padding-bottom: 50px;
+  }
 }
 
 .archive-page__wrapper {
@@ -21,13 +27,23 @@
   line-height: 43px;
   text-transform: uppercase;
   color: $color-decoration;
+
+  @include viewport--sm {
+    margin-bottom: 23px;
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
 
 .archive-page__archive {
   width: 100%;
-  margin-bottom: 56px;
+  margin-bottom: 60px;
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  @include viewport--sm {
+    margin-bottom: 30px;
   }
 }

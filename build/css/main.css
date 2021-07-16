@@ -3231,7 +3231,12 @@ ul {
   background-size: 100% 814px; }
 
 .archive-page__container {
-  padding-top: 213px; }
+  padding-top: 213px;
+  padding-bottom: 56px; }
+  @media (max-width: 767px) {
+    .archive-page__container {
+      padding-top: 113px;
+      padding-bottom: 50px; } }
 
 .archive-page__wrapper {
   display: -webkit-box;
@@ -3252,12 +3257,20 @@ ul {
   line-height: 43px;
   text-transform: uppercase;
   color: #033a9f; }
+  @media (max-width: 767px) {
+    .archive-page__title {
+      margin-bottom: 23px;
+      font-size: 30px;
+      line-height: 36px; } }
 
 .archive-page__archive {
   width: 100%;
-  margin-bottom: 56px; }
+  margin-bottom: 60px; }
   .archive-page__archive:last-of-type {
     margin-bottom: 0; }
+  @media (max-width: 767px) {
+    .archive-page__archive {
+      margin-bottom: 30px; } }
 
 .archive {
   position: relative;
@@ -3293,9 +3306,16 @@ ul {
     border-bottom: 2px dotted #485060; }
   .archive__year:hover, .archive__year:focus {
     color: #033a9f; }
+  @media (max-width: 767px) {
+    .archive__year {
+      font-size: 20px;
+      line-height: 24px; } }
 
 .archive__list-container {
-  padding: 17px 7px; }
+  padding: 17px 7px 10px 7px; }
+  @media (max-width: 767px) {
+    .archive__list-container {
+      padding: 17px 0; } }
 
 .archive__list {
   width: 100%;
@@ -3303,6 +3323,13 @@ ul {
   grid-template-columns: repeat(auto-fill, 200px);
   grid-template-rows: auto;
   gap: 25px; }
+  @media (max-width: 767px) {
+    .archive__list {
+      grid-template-columns: repeat(auto-fill, 103px);
+      -webkit-column-gap: 12px;
+         -moz-column-gap: 12px;
+              column-gap: 12px;
+      row-gap: 13px; } }
 
 .archive__item {
   position: relative; }
@@ -3333,6 +3360,10 @@ ul {
     height: auto;
     -o-object-fit: cover;
        object-fit: cover; }
+  @media (max-width: 767px) {
+    .archive__image-container {
+      width: 103px;
+      height: 144px; } }
 
 .archive__text {
   position: absolute;
@@ -3355,3 +3386,9 @@ ul {
   text-align: center;
   text-transform: uppercase;
   color: #1c1c1c; }
+  @media (max-width: 767px) {
+    .archive__text {
+      min-width: 88px;
+      padding: 5px;
+      font-size: 12px;
+      line-height: 14px; } }

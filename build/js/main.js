@@ -7,11 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const control = el.querySelector('.accordion__control');
     const content = el.querySelector('.accordion__content');
 
+    // если открыт аккордеон
+    if (el.classList.contains('open')) {
+      control.setAttribute('aria-expanded', true);
+      content.setAttribute('aria-hidden', false);
+      content.style.maxHeight = content.scrollHeight + 'px';
+    }
+
     control.addEventListener('click', (e) => {
       e.preventDefault();
       el.classList.toggle('open');
 
-      // если открыт аккордеон
       if (el.classList.contains('open')) {
         control.setAttribute('aria-expanded', true);
         content.setAttribute('aria-hidden', false);
