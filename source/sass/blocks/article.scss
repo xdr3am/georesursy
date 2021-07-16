@@ -70,6 +70,7 @@
 
     &:hover,
     &:focus {
+      color: $color-decoration;
       text-decoration: underline;
     }
   }
@@ -180,6 +181,11 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
+
+    &:hover,
+    &:focus {
+      color: $color-decoration;
+    }
 
     @include viewport--sm {
       word-wrap: break-word;

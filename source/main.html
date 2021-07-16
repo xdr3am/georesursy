@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>New project</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__main-nav main-nav">
+          <ul class="main-nav__list">
+
+            <li class="main-nav__item main-nav__item--logo">
+              <a href="index.html" class="main-nav__logo">
+                <picture>
+                  <source type="image/webp" srcset="
+                                img/content/logo-georesursy.webp,
+                                img/content/logo-georesursy@2x.webp 2x
+                  ">
+                  <img src="img/content/logo-georesursy.png" srcset="img/content/logo-georesursy@2x.png 2x" width="69"
+                    height="61" alt="Логотип Георесурсы">
+                </picture>
+              </a>
+              <div class="main-nav__text-container">
+                <h1 class="main-nav__title">Георесурсы</h1>
+                <p class="main-nav__text">ISSN 1608-5043 (Print)</p>
+                <p class="main-nav__text">ISSN 1608-5078 (Online)</p>
+              </div>
+            </li>
+            <!-- /.main-nav__item -->
+
+            <li class="main-nav__item main-nav__item--site-nav">
+              <ul class="main-nav__link-list">
+                <li class="main-nav__link-item dropdown dropdown--mobile">
+                  <a href="#" class="main-nav__link main-nav__link--dropdown hover-line dropdown__btn">
+                    <span class="main-nav__link-text">О журнале</span>
+                    <svg width="7" height="4">
+                      <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                    </svg>
+                  </a>
+                  <ul class="main-nav__sub-list dropdown__content">
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">
+                        <span class="main-nav__link-text">О журнале</span>
+                        <svg width="7" height="4">
+                          <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Индексирование</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Архив</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Контакты</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-nav__link-item">
+                  <a href="archive.html" class="main-nav__link hover-line">Архив</a>
+                </li>
+                <li class="main-nav__link-item dropdown dropdown--mobile">
+                  <a href="#" class="main-nav__link main-nav__link--dropdown hover-line dropdown__btn">
+                    <span class="main-nav__link-text">Для авторов</span>
+                    <svg width="7" height="4">
+                      <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                    </svg>
+                  </a>
+                  <ul class="main-nav__sub-list dropdown__content">
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">
+                        <span class="main-nav__link-text">Для авторов</span>
+                        <svg width="7" height="4">
+                          <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Редакционная политика</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Редакционная коллегия</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Редакция</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-nav__link-item">
+                  <a href="#" class="main-nav__link hover-line">Контакты</a>
+                </li>
+              </ul>
+              <button class="main-nav__close-menu btn-reset">
+                <svg width="25" height="24">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+                <span class="visually-hidden">Закрыть меню</span>
+              </button>
+            </li>
+            <!-- /.main-nav__item -->
+
+            <li class="main-nav__item main-nav__item--inputs">
+              <div class="main-nav__change-lang">
+                <div class="main-nav__input-box">
+                  <input class="main-nav__radio-input visually-hidden" type="radio" name="lang" id="lang-rus" checked>
+                  <label class="main-nav__radio-label" for="lang-rus">rus</label>
+                </div>
+                <div class="main-nav__input-box">
+                  <input class="main-nav__radio-input visually-hidden" type="radio" name="lang" id="lang-eng">
+                  <label class="main-nav__radio-label" for="lang-eng">eng</label>
+                </div>
+              </div>
+              <button class="main-nav__search-btn btn-reset hover-line" data-modal="search">
+                <svg width="17" height="17">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+                <span>Поиск</span>
+              </button>
+
+              <div class="modal modal--search">
+                <div class="modal__overlay"></div>
+                <div class="main-nav__input-search">
+                  <input type="text" name="main-search" id="main-search" placeholder="Введите слово или фразу">
+                  <label class="visually-hidden" for="main-search">Поиск по сайту</label>
+                </div>
+              </div>
+              <!-- /.modal modal--search -->
+
+            </li>
+            <!-- /.main-nav__item -->
+
+            <li class="main-nav__item main-nav__item--user-nav">
+              <div class="main-nav__link-container">
+                <a href="#" class="main-nav__link" data-modal="login">
+                  <svg width="17" height="17">
+                    <use xlink:href="img/sprite.svg#icon-lk"></use>
+                  </svg>
+                  <span>Личный кабинет</span>
+                </a>
+              </div>
+              <div class="main-nav__link-container">
+                <a href="#" class="main-nav__link">
+                  <svg width="18" height="17">
+                    <use xlink:href="img/sprite.svg#icon-add-manuscript"></use>
+                  </svg>
+                  <span>Отправить рукопись</span>
+                </a>
+              </div>
+            </li>
+            <!-- /.main-nav__item -->
+
+            <button class="main-nav__burger">
+              <svg width="32" height="21">
+                <use xlink:href="img/sprite.svg#icon-burger"></use>
+              </svg>
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /.header -->
+
+    <main class="page-view">
+      <div class="main-page">
+        <div class="main-page__wrapper">
+
+          <section class="main-page__promo promo">
+            <div class="promo__container container">
+              <div class="promo__text-container">
+                <p class="promo__title-sub">Научно-технический журнал</p>
+                <h2 class="promo__title title">Георесурсы</h2>
+                <p class="promo__text">
+                  Журнал Георесурсы — рецензируемое ежеквартальное научно-техническое издание, отвечающее международным
+                  стандартам. Журнал издается издается и издается. Рецензируемое ежеквартальное научно-техническое
+                  издание, отвечающее.
+                </p>
+                <div class="promo__btn-group">
+                  <a href="#" class="promo__btn btn btn--border btn-reset">Редакционная коллегия</a>
+                  <a href="#" class="promo__btn btn btn--border btn-reset">Редакционная политика</a>
+                </div>
+              </div>
+              <!-- /.promo__text-container -->
+
+              <div class="promo__slider" tabindex="-1">
+                <div class="promo__slider-container swiper-container">
+                  <ul class="promo__slider-wrapper swiper-wrapper">
+
+                    <li class="promo__slide slide slide--promo swiper-slide">
+                      <a href="#" class="slide__wrapper">
+                        <div class="slide__image-container">
+                          <picture>
+                            <source type="image/webp" srcset="
+                                          img/content/magazine-preview-002.webp,
+                                          img/content/magazine-preview-002@2x.webp 2x
+                            ">
+                            <img src="img/content/magazine-preview-002.jpg"
+                              srcset="img/content/magazine-preview-002@2x.jpg 2x" width="287" height="403"
+                              alt="Обложка журнала Георесурсы Т 21. №1. 2021">
+                          </picture>
+                        </div>
+                        <p class="slide__text slide__text--release">Т 21. №1. 2021</p>
+                      </a>
+                    </li>
+                    <!-- /.promo__slide slide swiper-slide -->
+
+                    <li class="promo__slide slide slide--promo swiper-slide">
+                      <a href="#" class="slide__wrapper">
+                        <div class="slide__image-container">
+                          <picture>
+                            <source type="image/webp" srcset="
+                                          img/content/magazine-preview-001.webp,
+                                          img/content/magazine-preview-001@2x.webp 2x
+                            ">
+                            <img src="img/content/magazine-preview-001.jpg"
+                              srcset="img/content/magazine-preview-001@2x.jpg 2x" width="287" height="403"
+                              alt="Обложка журнала Георесурсы Т 21. №1. 2021">
+                          </picture>
+                        </div>
+                        <p class="slide__text slide__text--release">Т 21. №2. 2021</p>
+                      </a>
+                    </li>
+                    <!-- /.promo__slide slide swiper-slide -->
+
+                    <li class="promo__slide slide slide--promo swiper-slide">
+                      <a href="#" class="slide__wrapper">
+                        <div class="slide__image-container">
+                          <picture>
+                            <source type="image/webp" srcset="
+                                          img/content/magazine-preview-003.webp,
+                                          img/content/magazine-preview-003@2x.webp 2x
+                            ">
+                            <img src="img/content/magazine-preview-003.jpg"
+                              srcset="img/content/magazine-preview-003@2x.jpg 2x" width="287" height="403"
+                              alt="Обложка журнала Георесурсы Т 21. №1. 2021">
+                          </picture>
+                        </div>
+                        <p class="slide__text slide__text--release">Т 21. №3. 2021</p>
+                      </a>
+                    </li>
+                    <!-- /.promo__slide slide swiper-slide -->
+
+                    <li class="promo__slide slide slide--promo swiper-slide">
+                      <a href="#" class="slide__wrapper">
+                        <div class="slide__image-container">
+                          <picture>
+                            <source type="image/webp" srcset="
+                                          img/content/magazine-preview-002.webp,
+                                          img/content/magazine-preview-002@2x.webp 2x
+                            ">
+                            <img src="img/content/magazine-preview-002.jpg"
+                              srcset="img/content/magazine-preview-002@2x.jpg 2x" width="287" height="403"
+                              alt="Обложка журнала Георесурсы Т 21. №1. 2021">
+                          </picture>
+                        </div>
+                        <p class="slide__text slide__text--release">Т 21. №1. 2021</p>
+                      </a>
+                    </li>
+                    <!-- /.promo__slide slide swiper-slide -->
+
+                    <li class="promo__slide slide slide--promo swiper-slide">
+                      <a href="#" class="slide__wrapper">
+                        <div class="slide__image-container">
+                          <picture>
+                            <source type="image/webp" srcset="
+                                          img/content/magazine-preview-001.webp,
+                                          img/content/magazine-preview-001@2x.webp 2x
+                            ">
+                            <img src="img/content/magazine-preview-001.jpg"
+                              srcset="img/content/magazine-preview-001@2x.jpg 2x" width="287" height="403"
+                              alt="Обложка журнала Георесурсы Т 21. №1. 2021">
+                          </picture>
+                        </div>
+                        <p class="slide__text slide__text--release">Т 21. №2. 2021</p>
+                      </a>
+                    </li>
+                    <!-- /.promo__slide slide swiper-slide -->
+
+                    <li class="promo__slide slide slide--promo swiper-slide">
+                      <a href="#" class="slide__wrapper">
+                        <div class="slide__image-container">
+                          <picture>
+                            <source type="image/webp" srcset="
+                                          img/content/magazine-preview-003.webp,
+                                          img/content/magazine-preview-003@2x.webp 2x
+                            ">
+                            <img src="img/content/magazine-preview-003.jpg"
+                              srcset="img/content/magazine-preview-003@2x.jpg 2x" width="287" height="403"
+                              alt="Обложка журнала Георесурсы Т 21. №1. 2021">
+                          </picture>
+                        </div>
+                        <p class="slide__text slide__text--release">Т 21. №3. 2021</p>
+                      </a>
+                    </li>
+                    <!-- /.promo__slide slide swiper-slide -->
+
+                  </ul>
+
+                  <div class="promo__slider-btn-group">
+                    <button class="promo__slider-btn-prev btn-reset">
+                      <svg width="35" height="9">
+                        <use xlink:href="img/sprite.svg#icon-arrow-left-long"></use>
+                      </svg>
+                    </button>
+                    <button class="promo__slider-btn-next btn-reset">
+                      <svg width="35" height="9">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right-long"></use>
+                      </svg>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <!-- /.promo__slider -->
+
+              <div class="promo__widget widget">
+                <ul class="widget__logo-list">
+
+                  <li class="widget__logo-item">
+                    <a href="#" class="widget__logo">
+                      <img src="img/content/logo-open-access.svg" width="95" height="39" alt="Логотип Open Access">
+                    </a>
+                  </li>
+                  <!-- /.widget__logo-item -->
+
+                  <li class="widget__logo-item">
+                    <a href="#" class="widget__logo">
+                      <img src="img/content/logo-doaj.png" width="95" height="28" alt="Логотип DOAJ">
+                    </a>
+                  </li>
+                  <!-- /.widget__logo-item -->
+
+                  <li class="widget__logo-item">
+                    <a href="#" class="widget__logo">
+                      <img src="img/content/logo-wos.svg" width="109" height="23"
+                        alt="Логотип Clarivate - Web of Science">
+                    </a>
+                  </li>
+                  <!-- /.widget__logo-item -->
+
+                  <li class="widget__logo-item">
+                    <a href="#" class="widget__logo">
+                      <img src="img/content/logo-scopus.svg" width="78" height="25" alt="Логотип Scopus">
+                    </a>
+                  </li>
+                  <!-- /.widget__logo-item -->
+                </ul>
+                <div class="widget__container">
+                  <a class="widget__georesursy"
+                    href="https://www.scimagojr.com/journalsearch.php?q=21100907383&amp;tip=sid&amp;exact=no"
+                    title="SCImago Journal &amp; Country Rank"><img border="0"
+                      src="https://www.scimagojr.com/journal_img.php?id=21100907383"
+                      alt="SCImago Journal &amp; Country Rank" />
+                  </a>
+                </div>
+                <a href="#" class="widget__btn btn btn--border btn--arrow btn--nowrap btn-reset">
+                  <span>Отправить рукопись</span>
+                  <svg width="17" height="8">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <!-- /.promo__widget widget -->
+
+            </div>
+            <!-- /.promo__wrapper -->
+
+          </section>
+          <!-- /.main-page__promo promo -->
+
+          <section class="main-page__articles articles">
+            <div class="articles__container container">
+              <h2 class="articles__title title">Популярные статьи</h2>
+              <div class="articles__content">
+                <div class="articles__list-container">
+                  <ul class="articles__list">
+
+                    <li class="articles__item articles__item--main article article--main">
+                      <div class="article__image-container">
+                        <picture>
+                          <source type="image/webp" srcset="
+                                        img/content/article-preview-001.webp,
+                                        img/content/article-preview-001@2x.webp 2x
+                          ">
+                          <img src="img/content/article-preview-001.jpg"
+                            srcset="img/content/article-preview-001@2x.jpg 2x" width="561" height="321"
+                            alt="Превью статьи">
+                        </picture>
+                      </div>
+                      <div class="article__date-container">
+                        <p class="article__date">15<br><span>апр</span></p>
+                      </div>
+                      <a href="#" class="article__title">Российский Нефтегазохимический Форум и&nbsp;выставка «Газ.
+                        Нефть. Технологии»</a>
+                      <p class="article__authors">А. Н. Ивойлов, К. Н. Кадеева, К. В. Константинопольский, Б. Р. Гуреев
+                      </p>
+                    </li>
+                    <!-- /.articles__item article -->
+
+                    <li class="articles__item article">
+                      <div class="article__image-container">
+                        <picture>
+                          <source type="image/webp" srcset="
+                                        img/content/article-preview-002.webp,
+                                        img/content/article-preview-002@2x.webp 2x
+                          ">
+                          <img src="img/content/article-preview-002.jpg"
+                            srcset="img/content/article-preview-002@2x.jpg 2x" width="561" height="321"
+                            alt="Превью статьи">
+                        </picture>
+                      </div>
+                      <div class="article__date-container">
+                        <p class="article__date">15<br><span>апр</span></p>
+                      </div>
+                      <a href="#" class="article__title">Российский Нефтегазохимический Форум и выставка «Газ. Нефть.
+                        Технологии»</a>
+                    </li>
+                    <!-- /.articles__item article -->
+
+                    <li class="articles__item article">
+                      <div class="article__image-container">
+                        <picture>
+                          <source type="image/webp" srcset="
+                                        img/content/article-preview-003.webp,
+                                        img/content/article-preview-003@2x.webp 2x
+                          ">
+                          <img src="img/content/article-preview-003.jpg"
+                            srcset="img/content/article-preview-003@2x.jpg 2x" width="561" height="321"
+                            alt="Превью статьи">
+                        </picture>
+                      </div>
+                      <div class="article__date-container">
+                        <p class="article__date">15<br><span>апр</span></p>
+                      </div>
+                      <a href="#" class="article__title">Российский Нефтегазохимический Форум и выставка</a>
+                    </li>
+                    <!-- /.articles__item article -->
+
+                  </ul>
+                  <a href="#" class="articles__btn btn btn--light btn-reset">
+                    <span>Все статьи</span>
+                  </a>
+                </div>
+                <!-- /.articles__list-container -->
+
+                <div class="articles__widget widget">
+                  <ul class="widget__logo-list">
+
+                    <li class="widget__logo-item">
+                      <a href="#" class="widget__logo">
+                        <img src="img/content/logo-open-access.svg" width="95" height="39" alt="Логотип Open Access">
+                      </a>
+                    </li>
+                    <!-- /.widget__logo-item -->
+
+                    <li class="widget__logo-item">
+                      <a href="#" class="widget__logo">
+                        <img src="img/content/logo-doaj.png" width="95" height="28" alt="Логотип DOAJ">
+                      </a>
+                    </li>
+                    <!-- /.widget__logo-item -->
+
+                    <li class="widget__logo-item">
+                      <a href="#" class="widget__logo">
+                        <img src="img/content/logo-wos.svg" width="109" height="23"
+                          alt="Логотип Clarivate - Web of Science">
+                      </a>
+                    </li>
+                    <!-- /.widget__logo-item -->
+
+                    <li class="widget__logo-item">
+                      <a href="#" class="widget__logo">
+                        <img src="img/content/logo-scopus.svg" width="78" height="25" alt="Логотип Scopus">
+                      </a>
+                    </li>
+                    <!-- /.widget__logo-item -->
+                  </ul>
+                  <div class="widget__container">
+                    <a class="widget__georesursy"
+                      href="https://www.scimagojr.com/journalsearch.php?q=21100907383&amp;tip=sid&amp;exact=no"
+                      title="SCImago Journal &amp; Country Rank"><img border="0"
+                        src="https://www.scimagojr.com/journal_img.php?id=21100907383"
+                        alt="SCImago Journal &amp; Country Rank" />
+                    </a>
+                  </div>
+                  <a href="#" class="widget__btn btn btn--border btn--arrow btn--nowrap btn-reset">
+                    <span>Отправить рукопись</span>
+                    <svg width="17" height="8">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+                <!-- /.promo__widget widget -->
+
+              </div>
+            </div>
+          </section>
+          <!-- /.main-page__articles articles -->
+
+          <section class="main-page__about about">
+            <div class="about__container container">
+              <div class="about__wrapper">
+
+                <div class="about__text-container">
+                  <h2 class="about__title title">О журнале</h2>
+                  <p class="about__text">Журнал георесурсы — рецензируемое ежеквартальное научно-техническое издание,
+                    отвечающее международным стандартам. Журнал издается с 1999 года. Рецензируемое ежеквартальное
+                    научно-техническое издание, отвечающее международным стандартам.</p>
+                  <a href="#" class="about__btn btn btn--border btn--arrow btn--nowrap btn-reset">
+                    <span>Подробнее о журнале</span>
+                    <svg width="17" height="8">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+                <!-- /.about__text-container -->
+
+                <div class="about__list-container">
+                  <ul class="about__list">
+
+                    <li class="about__item">
+                      <div class="about__item-image-container">
+                        <svg width="32" height="32">
+                          <use xlink:href="img/sprite.svg#icon-unlocked"></use>
+                        </svg>
+                      </div>
+                      <div class="about__item-text-container">
+                        <h3 class="about__item-title">Open Access</h3>
+                        <p class="about__item-text">Георесурсы - журнал открытого доступа</p>
+                      </div>
+                    </li>
+                    <!-- /.about__item -->
+
+                    <li class="about__item">
+                      <div class="about__item-image-container">
+                        <svg width="30" height="30">
+                          <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg>
+                      </div>
+                      <div class="about__item-text-container">
+                        <h3 class="about__item-title">Плата за публикацию</h3>
+                        <p class="about__item-text">Статьи публикуются бесплатно</p>
+                      </div>
+                    </li>
+                    <!-- /.about__item -->
+
+                    <li class="about__item">
+                      <div class="about__item-image-container">
+                        <svg width="30" height="30">
+                          <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg>
+                      </div>
+                      <div class="about__item-text-container">
+                        <h3 class="about__item-title">Периодичность</h3>
+                        <p class="about__item-text">Журнал издается ежеквартально</p>
+                      </div>
+                    </li>
+                    <!-- /.about__item -->
+
+                    <li class="about__item">
+                      <div class="about__item-image-container">
+                        <svg width="26" height="25">
+                          <use xlink:href="img/sprite.svg#icon-planet"></use>
+                        </svg>
+                      </div>
+                      <div class="about__item-text-container">
+                        <h3 class="about__item-title">История</h3>
+                        <p class="about__item-text">Журнал издается с 1999 года</p>
+                      </div>
+                    </li>
+                    <!-- /.about__item -->
+
+                  </ul>
+                </div>
+                <!-- /.about__list-container -->
+
+                <div class="about__widget widget">
+                  <ul class="widget__logo-list">
+
+                    <li class="widget__logo-item">
+                      <a href="#" class="widget__logo">
+                        <img src="img/content/logo-open-access.svg" width="95" height="39" alt="Логотип Open Access">
+                      </a>
+                    </li>
+                    <!-- /.widget__logo-item -->
+
+                    <li class="widget__logo-item">
+                      <a href="#" class="widget__logo">
+                        <img src="img/content/logo-doaj.png" width="95" height="28" alt="Логотип DOAJ">
+                      </a>
+                    </li>
+                    <!-- /.widget__logo-item -->
+
+                    <li class="widget__logo-item">
+                      <a href="#" class="widget__logo">
+                        <img src="img/content/logo-wos.svg" width="109" height="23"
+                          alt="Логотип Clarivate - Web of Science">
+                      </a>
+                    </li>
+                    <!-- /.widget__logo-item -->
+
+                    <li class="widget__logo-item">
+                      <a href="#" class="widget__logo">
+                        <img src="img/content/logo-scopus.svg" width="78" height="25" alt="Логотип Scopus">
+                      </a>
+                    </li>
+                    <!-- /.widget__logo-item -->
+                  </ul>
+
+                  <div class="widget__container">
+                    <a class="widget__georesursy"
+                      href="https://www.scimagojr.com/journalsearch.php?q=21100907383&amp;tip=sid&amp;exact=no"
+                      title="SCImago Journal &amp; Country Rank"><img border="0"
+                        src="https://www.scimagojr.com/journal_img.php?id=21100907383"
+                        alt="SCImago Journal &amp; Country Rank" />
+                    </a>
+                  </div>
+                  <!-- /.widget__container -->
+
+                  <a href="#" class="widget__btn btn btn--border btn--arrow btn--nowrap btn-reset">
+                    <span>Отправить рукопись</span>
+                    <svg width="17" height="8">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+                <!-- /.about__widget widget -->
+
+              </div>
+              <!-- /.about__wrapper -->
+            </div>
+            <!-- /.about__container container -->
+          </section>
+          <!-- /.main-page__about about -->
+
+          <section class="main-page__news news">
+            <div class="news__container container">
+              <div class="news__wrapper">
+                <h2 class="news__title title">Новости</h2>
+                <ul class="news__list">
+
+                  <li class="news__item article article--news">
+                    <div class="article__image-container">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/news-preview-001.webp,
+                                      img/content/news-preview-001@2x.webp 2x
+                        ">
+                        <img src="img/content/news-preview-001.jpg" srcset="img/content/news-preview-001@2x.jpg 2x"
+                          width="264" height="142" alt="Превью новости">
+                      </picture>
+                    </div>
+                    <div class="article__date-container">
+                      <p class="article__date">15<br><span>апр</span></p>
+                    </div>
+                    <a href="#" class="article__title">Российский Нефтегазохимический Форум и выставка «Газ. Нефть.
+                      Технологии»</a>
+                  </li>
+                  <!-- /.news__item article article--news -->
+
+                  <li class="news__item article article--news">
+                    <div class="article__image-container">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/news-preview-002.webp,
+                                      img/content/news-preview-002@2x.webp 2x
+                        ">
+                        <img src="img/content/news-preview-002.jpg" srcset="img/content/news-preview-002@2x.jpg 2x"
+                          width="264" height="142" alt="Превью новости">
+                      </picture>
+                    </div>
+                    <div class="article__date-container">
+                      <p class="article__date">15<br><span>апр</span></p>
+                    </div>
+                    <a href="#" class="article__title">Российский Нефтегазохимический Форум и выставка «Газ. Нефть.
+                      Технологии»</a>
+                  </li>
+                  <!-- /.news__item article article--news -->
+
+                  <li class="news__item article article--news">
+                    <div class="article__image-container">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/news-preview-003.webp,
+                                      img/content/news-preview-003@2x.webp 2x
+                        ">
+                        <img src="img/content/news-preview-003.jpg" srcset="img/content/news-preview-003@2x.jpg 2x"
+                          width="264" height="142" alt="Превью новости">
+                      </picture>
+                    </div>
+                    <div class="article__date-container">
+                      <p class="article__date">15<br><span>апр</span></p>
+                    </div>
+                    <a href="#" class="article__title">Российский Нефтегазохимический Форум и выставка «Газ. Нефть.
+                      Технологии»</a>
+                  </li>
+                  <!-- /.news__item article article--news -->
+
+                  <li class="news__item article article--news">
+                    <div class="article__image-container">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/news-preview-001.webp,
+                                      img/content/news-preview-001@2x.webp 2x
+                        ">
+                        <img src="img/content/news-preview-001.jpg" srcset="img/content/news-preview-001@2x.jpg 2x"
+                          width="264" height="142" alt="Превью новости">
+                      </picture>
+                    </div>
+                    <div class="article__date-container">
+                      <p class="article__date">15<br><span>апр</span></p>
+                    </div>
+                    <a href="#" class="article__title">Российский Нефтегазохимический Форум и выставка «Газ. Нефть.
+                      Технологии»</a>
+                  </li>
+                  <!-- /.news__item article article--news -->
+
+                </ul>
+                <a href="#" class="news__btn btn btn--light btn-reset">
+                  <span>Все новости</span>
+                </a>
+              </div>
+            </div>
+          </section>
+          <!-- /.main-page__news news -->
+
+          <section class="main-page__partners partners">
+            <div class="partners__container container">
+              <div class="partners__wrapper">
+                <h2 class="partners__title title">Партнёры</h2>
+                <ul class="partners__list">
+
+                  <li class="partners__item">
+                    <a href="#" class="partners__logo">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/partner-logo-001.webp,
+                                      img/content/partner-logo-001@2x.webp 2x
+                        ">
+                        <img src="img/content/partner-logo-001.png" srcset="img/content/partner-logo-001@2x.png 2x"
+                          width="105" height="114" alt="Превью новости">
+                      </picture>
+                    </a>
+                  </li>
+                  <!-- /.partners__item -->
+
+                  <li class="partners__item">
+                    <a href="#" class="partners__logo">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/partner-logo-002.webp,
+                                      img/content/partner-logo-002@2x.webp 2x
+                        ">
+                        <img src="img/content/partner-logo-002.png" srcset="img/content/partner-logo-002@2x.png 2x"
+                          width="92" height="92" alt="Превью новости">
+                      </picture>
+                    </a>
+                  </li>
+                  <!-- /.partners__item -->
+
+                  <li class="partners__item">
+                    <a href="#" class="partners__logo">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/partner-logo-003.webp,
+                                      img/content/partner-logo-003@2x.webp 2x
+                        ">
+                        <img src="img/content/partner-logo-003.png" srcset="img/content/partner-logo-003@2x.png 2x"
+                          width="107" height="85" alt="Превью новости">
+                      </picture>
+                    </a>
+                  </li>
+                  <!-- /.partners__item -->
+
+                  <li class="partners__item">
+                    <a href="#" class="partners__logo">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/partner-logo-001.webp,
+                                      img/content/partner-logo-001@2x.webp 2x
+                        ">
+                        <img src="img/content/partner-logo-001.png" srcset="img/content/partner-logo-001@2x.png 2x"
+                          width="105" height="114" alt="Превью новости">
+                      </picture>
+                    </a>
+                  </li>
+                  <!-- /.partners__item -->
+
+                  <li class="partners__item">
+                    <a href="#" class="partners__logo">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/partner-logo-002.webp,
+                                      img/content/partner-logo-002@2x.webp 2x
+                        ">
+                        <img src="img/content/partner-logo-002.png" srcset="img/content/partner-logo-002@2x.png 2x"
+                          width="92" height="92" alt="Превью новости">
+                      </picture>
+                    </a>
+                  </li>
+                  <!-- /.partners__item -->
+
+                  <li class="partners__item">
+                    <a href="#" class="partners__logo">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/partner-logo-004.webp,
+                                      img/content/partner-logo-004@2x.webp 2x
+                        ">
+                        <img src="img/content/partner-logo-004.png" srcset="img/content/partner-logo-004@2x.png 2x"
+                          width="90" height="94" alt="Превью новости">
+                      </picture>
+                    </a>
+                  </li>
+                  <!-- /.partners__item -->
+
+                  <li class="partners__item">
+                    <a href="#" class="partners__logo">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/partner-logo-003.webp,
+                                      img/content/partner-logo-003@2x.webp 2x
+                        ">
+                        <img src="img/content/partner-logo-003.png" srcset="img/content/partner-logo-003@2x.png 2x"
+                          width="107" height="85" alt="Превью новости">
+                      </picture>
+                    </a>
+                  </li>
+                  <!-- /.partners__item -->
+
+                  <li class="partners__item">
+                    <a href="#" class="partners__logo">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/partner-logo-007.webp,
+                                      img/content/partner-logo-007@2x.webp 2x
+                        ">
+                        <img src="img/content/partner-logo-007.png" srcset="img/content/partner-logo-007@2x.png 2x"
+                          width="80" height="77" alt="Превью новости">
+                      </picture>
+                    </a>
+                  </li>
+                  <!-- /.partners__item -->
+
+                  <li class="partners__item">
+                    <a href="#" class="partners__logo">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/partner-logo-005.webp,
+                                      img/content/partner-logo-005@2x.webp 2x
+                        ">
+                        <img src="img/content/partner-logo-005.png" srcset="img/content/partner-logo-005@2x.png 2x"
+                          width="95" height="132" alt="Превью новости">
+                      </picture>
+                    </a>
+                  </li>
+                  <!-- /.partners__item -->
+
+                  <li class="partners__item">
+                    <a href="#" class="partners__logo">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/partner-logo-004.webp,
+                                      img/content/partner-logo-004@2x.webp 2x
+                        ">
+                        <img src="img/content/partner-logo-004.png" srcset="img/content/partner-logo-004@2x.png 2x"
+                          width="90" height="94" alt="Превью новости">
+                      </picture>
+                    </a>
+                  </li>
+                  <!-- /.partners__item -->
+
+                  <li class="partners__item">
+                    <a href="#" class="partners__logo">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/partner-logo-007.webp,
+                                      img/content/partner-logo-007@2x.webp 2x
+                        ">
+                        <img src="img/content/partner-logo-007.png" srcset="img/content/partner-logo-007@2x.png 2x"
+                          width="80" height="77" alt="Превью новости">
+                      </picture>
+                    </a>
+                  </li>
+                  <!-- /.partners__item -->
+
+                  <li class="partners__item">
+                    <a href="#" class="partners__logo">
+                      <picture>
+                        <source type="image/webp" srcset="
+                                      img/content/partner-logo-006.webp,
+                                      img/content/partner-logo-006@2x.webp 2x
+                        ">
+                        <img src="img/content/partner-logo-006.png" srcset="img/content/partner-logo-006@2x.png 2x"
+                          width="104" height="73" alt="Превью новости">
+                      </picture>
+                    </a>
+                  </li>
+                  <!-- /.partners__item -->
+
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- /.main-page__partners partners -->
+
+          <section class="main-page__send send">
+            <div class="send__container container">
+              <div class="send__wrapper">
+                <h3 class="send__title">Отправить рукопись</h3>
+                <p class="send__text">Перед тем как отправлять рукопись, пожалуйста, ознакомьтесь с редакционной
+                  политикой и публикационной этикой журнала, а также порядком рассмотрения рукописей.</p>
+                <button class="send__btn btn btn--border btn--arrow btn--nowrap btn-reset">
+                  <span>Отправить рукопись</span>
+                  <svg width="17" height="8">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </section>
+          <!-- /.main-page__send send -->
+
+        </div>
+      </div>
+    </main>
+    <!-- /.page-view -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__logo-container">
+          <a href="index.html" class="footer__logo">
+            <picture>
+              <source type="image/webp" srcset="
+                                          img/content/logo-georesursy.webp,
+                                          img/content/logo-georesursy@2x.webp 2x
+                            ">
+              <img src="img/content/logo-georesursy.png" srcset="img/content/logo-georesursy@2x.png 2x" width="69"
+                height="61" alt="Логотип Георесурсы">
+            </picture>
+          </a>
+          <div class="footer__text-container">
+            <h3 class="footer__title">Георесурсы</h3>
+            <p class="footer__text">ISSN 1608-5043 (Print)</p>
+            <p class="footer__text">ISSN 1608-5078 (Online)</p>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Редакционная коллегия</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Редакционная политика</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--lk">
+              <a href="#" class="footer__nav-link footer__nav-link--lk" data-modal="login">Личный кабинет</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Рецензирование</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Индексирование</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--archive">
+              <a href="archive.html" class="footer__nav-link">Архив</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">О журнале</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Для авторов</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--contacts">
+              <a href="#" class="footer__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__inputs">
+          <button class="footer__search-btn btn-reset" data-modal="search">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite.svg#icon-search-2"></use>
+            </svg>
+          </button>
+          <div class="footer__change-lang">
+            <div class="footer__input-box">
+              <input class="footer__radio-input visually-hidden" type="radio" name="lang-footer" id="lang-rus-footer"
+                checked>
+              <label class="footer__radio-label" for="lang-rus-footer">rus</label>
+            </div>
+            <div class="footer__input-box">
+              <input class="footer__radio-input visually-hidden" type="radio" name="lang-footer" id="lang-eng-footer">
+              <label class="footer__radio-label" for="lang-eng-footer">eng</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+
+    <div class="modal modal--login">
+      <div class="modal__overlay"></div>
+      <div class="main-nav__login login">
+        <div class="login__title">
+          <svg width="17" height="17">
+            <use xlink:href="img/sprite.svg#icon-lk"></use>
+          </svg>
+          <span>Личный кабинет</span>
+        </div>
+        <form class="login__form" action="#" method="post">
+          <div class="login__input-box">
+            <input type="text" name="login-name" id="login-name" placeholder="Логин">
+            <label class="visually-hidden" for="login-name">Введите логин</label>
+          </div>
+          <div class="login__input-box">
+            <input type="password" name="login-password" id="login-password" placeholder="Пароль">
+            <label class="visually-hidden" for="login-password">Введите пароль</label>
+          </div>
+          <div class="login__btn-group">
+            <a href="#" class="login__btn btn btn--underline btn-reset">
+              <span>Напомнить</span>
+            </a>
+            <button class="login__btn btn btn--white btn-reset" type="submit">Войти</button>
+          </div>
+        </form>
+        <a href="#" class="login__btn-reg btn btn--underline btn-reset">
+          <span>Регистрация</span>
+          <svg width="30" height="8">
+            <use xlink:href="img/sprite.svg#icon-arrow-right-long"></use>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+    <!-- /.modal modal--login -->
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

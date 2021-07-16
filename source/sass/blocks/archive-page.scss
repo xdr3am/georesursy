@@ -1,0 +1,33 @@
+.archive-page {
+  background: url("../img/bg/bg-lines.png") no-repeat;
+  background-position: top;
+  background-size: 100% 814px;
+}
+
+.archive-page__container {
+  padding-top: 213px;
+}
+
+.archive-page__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.archive-page__title {
+  margin-bottom: 58px;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: $color-decoration;
+}
+
+.archive-page__archive {
+  width: 100%;
+  margin-bottom: 56px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

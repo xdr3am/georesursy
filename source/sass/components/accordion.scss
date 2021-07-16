@@ -1,0 +1,24 @@
+.accordion__control {
+	cursor: pointer;
+}
+
+.accordion__content {
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+	will-change: max-height;
+	transition: all 0.3s ease-out;
+	box-sizing: content-box;
+}
+
+.accordion__icon {
+	transition: transform 0.3s ease-out;
+}
+
+.open .accordion__icon {
+	transform: rotate(180deg);
+}
+
+.open .accordion__content {
+	opacity: 1;
+}
