@@ -1098,6 +1098,9 @@ ul {
   border: none;
   cursor: pointer; }
 
+.bold {
+  font-weight: bold; }
+
 .container {
   width: 100%;
   max-width: 1220px;
@@ -3371,8 +3374,7 @@ ul {
     -webkit-box-shadow: 5px 5px 5px #9b9997;
             box-shadow: 5px 5px 5px #9b9997; }
     .archive__link:hover .archive__text, .archive__link:focus .archive__text {
-      color: #ffffff;
-      background-color: #033a9f; }
+      color: #033a9f; }
 
 .archive__image-container {
   width: 200px;
@@ -3667,3 +3669,228 @@ ul {
   @media (max-width: 767px) {
     .file__btn {
       margin-bottom: 10px; } }
+
+.authors {
+  position: relative; }
+
+.authors {
+  padding-top: 197px; }
+  @media (max-width: 767px) {
+    .authors {
+      padding-top: 100px; } }
+
+.authors__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.authors__top-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 50px; }
+  @media (max-width: 767px) {
+    .authors__top-line {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 18px; } }
+
+.authors__title-container {
+  margin-right: 45px; }
+
+.authors__breadcrumbs {
+  margin-bottom: 10px; }
+  @media (max-width: 767px) {
+    .authors__breadcrumbs {
+      display: none; } }
+
+.authors__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 34px; }
+  @media (max-width: 767px) {
+    .authors__title {
+      font-size: 30px;
+      line-height: 28px; } }
+  @media (max-width: 767px) {
+    .authors__title {
+      margin-bottom: 9px; } }
+
+.authors__btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px; }
+  @media (max-width: 767px) {
+    .authors__btn-group {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin: 0; } }
+
+.authors__btn {
+  padding: 3px 11px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px; }
+  .authors__btn:first-of-type {
+    border-right: none; }
+  @media (max-width: 767px) {
+    .authors__btn {
+      padding: 0;
+      margin-bottom: 9px;
+      border: none;
+      text-decoration: underline; }
+      .authors__btn:hover, .authors__btn:focus {
+        background-color: transparent;
+        color: #033a9f; } }
+
+.authors__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 84px; }
+  @media (max-width: 1023px) {
+    .authors__content {
+      margin: 0; } }
+
+.authors__list-container,
+.authors__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 35px; }
+
+.authors__text-container {
+  width: 100%;
+  max-width: 769px; }
+
+.authors__list-title,
+.authors__text-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  color: #485060;
+  margin-bottom: 20px; }
+  .authors__list-title--low,
+  .authors__text-title--low {
+    font-size: 18px;
+    line-height: 27px; }
+  .authors__list-title--topline,
+  .authors__text-title--topline {
+    max-width: 778px;
+    padding-top: 30px;
+    border-top: 1px solid #033a9f; }
+
+.authors__text-title {
+  margin-bottom: 14px; }
+
+.authors__list {
+  width: 100%;
+  max-width: 769px; }
+  .authors__list--2-column {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 52px;
+       -moz-column-gap: 52px;
+            column-gap: 52px;
+    margin-right: auto; }
+    @media (max-width: 767px) {
+      .authors__list--2-column {
+        -webkit-column-count: auto;
+           -moz-column-count: auto;
+                column-count: auto; } }
+
+.authors__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 15px; }
+  .authors__item:last-of-type {
+    margin-bottom: 0; }
+
+.authors__list--2-column .authors__item {
+  width: 100%;
+  max-width: 360px;
+  -webkit-column-break-inside: avoid;
+     -moz-column-break-inside: avoid;
+          break-inside: avoid; }
+  @media (max-width: 767px) {
+    .authors__list--2-column .authors__item {
+      max-width: none; } }
+
+.authors__item-number {
+  margin-right: 7px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #033a9f; }
+
+.authors__item-text,
+.authors__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #485060; }
+
+.authors__text-link {
+  color: #033a9f; }
+
+.authors__list-container--color {
+  width: 100%;
+  max-width: 832px;
+  background: #f3f7f8;
+  border-radius: 5px; }
+  .authors__list-container--color .authors__list-title {
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 5px;
+    background-color: #033a9f;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff; }
+  .authors__list-container--color .authors__list {
+    width: 100%;
+    max-width: none;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .authors__list-container--color .authors__item {
+    position: relative;
+    padding: 13px 0;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #d9dfe8; }
+    .authors__list-container--color .authors__item:last-of-type {
+      border: none; }
+
+.authors__item-line {
+  margin-right: 7px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #06b1e7; }

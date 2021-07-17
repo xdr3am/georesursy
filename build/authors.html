@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>Георесурсы</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__main-nav main-nav">
+          <ul class="main-nav__list">
+
+            <li class="main-nav__item main-nav__item--logo">
+              <a href="index.html" class="main-nav__logo">
+                <picture>
+                  <source type="image/webp" srcset="
+                                img/content/logo-georesursy.webp,
+                                img/content/logo-georesursy@2x.webp 2x
+                  ">
+                  <img src="img/content/logo-georesursy.png" srcset="img/content/logo-georesursy@2x.png 2x" width="69" height="61" alt="Логотип Георесурсы">
+                </picture>
+              </a>
+              <div class="main-nav__text-container">
+                <h1 class="main-nav__title">Георесурсы</h1>
+                <p class="main-nav__text">ISSN 1608-5043 (Print)</p>
+                <p class="main-nav__text">ISSN 1608-5078 (Online)</p>
+              </div>
+            </li>
+            <!-- /.main-nav__item -->
+
+            <li class="main-nav__item main-nav__item--site-nav">
+              <ul class="main-nav__link-list">
+                <li class="main-nav__link-item dropdown dropdown--mobile">
+                  <a href="#" class="main-nav__link main-nav__link--dropdown hover-line dropdown__btn">
+                    <span class="main-nav__link-text">О журнале</span>
+                    <svg width="7" height="4">
+                      <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                    </svg>
+                  </a>
+                  <ul class="main-nav__sub-list dropdown__content">
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">
+                        <span class="main-nav__link-text">О журнале</span>
+                        <svg width="7" height="4">
+                          <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Индексирование</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Архив</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Контакты</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-nav__link-item">
+                  <a href="archive.html" class="main-nav__link hover-line">Архив</a>
+                </li>
+                <li class="main-nav__link-item dropdown dropdown--mobile">
+                  <a href="#" class="main-nav__link main-nav__link--dropdown hover-line dropdown__btn">
+                    <span class="main-nav__link-text">Для авторов</span>
+                    <svg width="7" height="4">
+                      <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                    </svg>
+                  </a>
+                  <ul class="main-nav__sub-list dropdown__content">
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">
+                        <span class="main-nav__link-text">Для авторов</span>
+                        <svg width="7" height="4">
+                          <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Редакционная политика</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Редакционная коллегия</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Редакция</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-nav__link-item">
+                  <a href="#" class="main-nav__link hover-line">Контакты</a>
+                </li>
+              </ul>
+              <button class="main-nav__close-menu btn-reset">
+                <svg width="25" height="24">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+                <span class="visually-hidden">Закрыть меню</span>
+              </button>
+            </li>
+            <!-- /.main-nav__item -->
+
+            <li class="main-nav__item main-nav__item--inputs">
+              <div class="main-nav__change-lang">
+                <div class="main-nav__input-box">
+                  <input class="main-nav__radio-input visually-hidden" type="radio" name="lang" id="lang-rus" checked="">
+                  <label class="main-nav__radio-label" for="lang-rus">rus</label>
+                </div>
+                <div class="main-nav__input-box">
+                  <input class="main-nav__radio-input visually-hidden" type="radio" name="lang" id="lang-eng">
+                  <label class="main-nav__radio-label" for="lang-eng">eng</label>
+                </div>
+              </div>
+              <button class="main-nav__search-btn btn-reset hover-line" data-modal="search">
+                <svg width="17" height="17">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+                <span>Поиск</span>
+              </button>
+
+              <div class="modal modal--search">
+                <div class="modal__overlay"></div>
+                <div class="main-nav__input-search">
+                  <input type="text" name="main-search" id="main-search" placeholder="Введите слово или фразу">
+                  <label class="visually-hidden" for="main-search">Поиск по сайту</label>
+                </div>
+              </div>
+              <!-- /.modal modal--search -->
+
+            </li>
+            <!-- /.main-nav__item -->
+
+            <li class="main-nav__item main-nav__item--user-nav">
+              <div class="main-nav__link-container">
+                <a href="#" class="main-nav__link" data-modal="login">
+                  <svg width="17" height="17">
+                    <use xlink:href="img/sprite.svg#icon-lk"></use>
+                  </svg>
+                  <span>Личный кабинет</span>
+                </a>
+              </div>
+              <div class="main-nav__link-container">
+                <a href="#" class="main-nav__link">
+                  <svg width="18" height="17">
+                    <use xlink:href="img/sprite.svg#icon-add-manuscript"></use>
+                  </svg>
+                  <span>Отправить рукопись</span>
+                </a>
+              </div>
+            </li>
+            <!-- /.main-nav__item -->
+
+          </ul>
+          <button class="main-nav__burger">
+            <svg width="32" height="21">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+            </svg>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- /.header -->
+
+    <main class="page-view authors">
+      <div class="authors__container container">
+        <div class="authors__wrapper">
+
+          <div class="authors__top-line">
+            <div class="authors__title-container">
+              <div class="authors__breadcrumbs breadcrumbs">
+                <a href="main.html">Георесурсы /</a>
+              </div>
+              <h2 class="authors__title title">Авторам</h2>
+            </div>
+            <div class="authors__btn-group">
+              <a href="#" class="authors__btn btn btn--border btn-reset">Порядок публикации</a>
+              <a href="#" class="authors__btn btn btn--border btn-reset">Правила оформления</a>
+            </div>
+          </div>
+          <!-- /.authors__top-line -->
+
+          <div class="authors__content">
+
+            <h2 class="authors__text-title">Порядок публикации статей</h2>
+
+            <div class="authors__list-container">
+              <ul class="authors__list authors__list--2-column">
+
+                <li class="authors__item">
+                  <span class="authors__item-number">01</span>
+                  <p class="authors__item-text">Редакционной коллегией журнала "Георесурсы" принимаются к рассмотрению
+                    только оригинальные (ранее нигде не опубликованные и не переданные на рассмотрение в другие издания)
+                    статьи на русском и английском языках.</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">02</span>
+                  <p class="authors__item-text">Статьи публикуются бесплатно. Плата с авторов за подготовку статьи к
+                    публикации и публикацию статьи не взимается.</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">03</span>
+                  <p class="authors__item-text">Представляемая для публикации статья должна соответствовать правилам
+                    оформления, разработанными редколлегией журнала.</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">04</span>
+                  <p class="authors__item-text">Все статьи, принятые к публикации в журнале, публикуются в обязательном
+                    порядке на русском и английском языках. Если статья на русском языке, необходим перевод статьи на
+                    английский язык, который могут выполнить либо сами авторы (в этом случае редакция будет проверять
+                    перевод на качество), либо перевод можно заказать в редакции журнала.</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">05</span>
+                  <p class="authors__item-text">Все поступающие в редакцию журнала статьи проверяются на плагиат.</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">06</span>
+                  <p class="authors__item-text">Редакция рассматривает поступившие статьи в порядке очереди. После
+                    рецензирования статья рассматривается Редакционной коллегией журнала, которая дает разрешение на
+                    печать.</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">07</span>
+                  <p class="authors__item-text">Представляя статью для публикации, автор тем самым выражает согласие на
+                    размещение полного ее текста в сети Интернет на официальных сайтах Научной электронной библиотеки,
+                    журнала «Георесурсы» и других электронных ресурсах, на передачу текста статьи (в том числе ссылок,
+                    библиографической информации и т.д.) лицам, предоставление которым данных сведений носит
+                    обязательный характер.</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">08</span>
+                  <p class="authors__item-text">Авторы в течение 5 рабочих дней получают уведомление о поступившей
+                    статье. Через 8-16 недель после получения статьи редакция сообщает авторам о результатах
+                    рецензирования и о плане публикации статьи. Редакционная коллегия правомочна отправить статью на
+                    дополнительное рецензирование.</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">09</span>
+                  <p class="authors__item-text">В случае положительного решения, статья публикуется в порядке очереди.
+                    Рукопись, подготовленная к печати, высылается автору на проверку.</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">10</span>
+                  <p class="authors__item-text">Печатные экземпляры журнала, содержащие опубликованную статью,
+                    предоставляются по запросу.</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">11</span>
+                  <p class="authors__item-text">Авторский гонорар за издание статей не начисляется.</p>
+                </li>
+                <!-- /.authors__item -->
+
+              </ul>
+            </div>
+            <!-- /.authors__list-container -->
+
+            <div class="authors__list-container">
+              <h3 class="authors__list-title authors__list-title--low">Авторские права</h3>
+              <ul class="authors__list authors__list--2-column">
+
+                <li class="authors__item">
+                  <span class="authors__item-number">01</span>
+                  <p class="authors__item-text">Использование текста публикации авторами: Авторы имеют право размещать
+                    свою работу в сети Интернет после публикации статьи</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">02</span>
+                  <p class="authors__item-text">При принятии редакционной коллегией решения о публикации рукописи автор
+                    сохраняет за собой право на ее текст без каких-либо ограничений, а также соглашается с передачей
+                    права на ее издание и распространение (в электронной и бумажной версиях).</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">03</span>
+                  <p class="authors__item-text">Иcпользование PDF-версии: Авторы имеют право размещать свою публикацию в
+                    сети Интернет в виде PDF-версии издателя</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">04</span>
+                  <p class="authors__item-text">Препринт авторов: Авторы имеют право размещать свою работу в сети
+                    Интернет (в институтском хранилище или на персональном сайте) до и во время процесса рассмотрения ее
+                    данным журналом</p>
+                </li>
+                <!-- /.authors__item -->
+
+              </ul>
+            </div>
+            <!-- /.authors__list-container -->
+
+            <div class="authors__text-container">
+              <h3 class="authors__text-title authors__text-title--low">Приватность</h3>
+              <p class="authors__text">
+                Имена и адреса электронной почты, введенные на сайте этого журнала, будут использованы исключительно для
+                целей, обозначенных этим журналом, и не будут использованы для каких-либо других целей или предоставлены
+                другим лицам и организациям.
+              </p>
+            </div>
+            <!-- /.authors__text-container -->
+
+            <h2 class="authors__text-title authors__text-title--topline">Правила оформления статей</h2>
+
+            <div class="authors__text-container">
+              <p class="authors__text">
+                <span class="bold">Уважаемые коллеги!</span>
+                <br>
+                Перед тем как отправлять статью в редакцию журнала, пожалуйста, ознакомьтесь с порядком публикации
+                статей в журнале. Статья направляется в Редакцию журнала в электронном варианте по
+                <span class="bold">e-mail:</span>
+                <a class="authors__text-link hover-line" href="mailto:mail@geors.ru">mail@geors.ru</a> – ответственному
+                секретарю
+                журнала Христофоровой Дарье.
+              </p>
+            </div>
+            <!-- /.authors__text-container -->
+
+            <div class="authors__list-container">
+              <h3 class="authors__list-title authors__list-title--low">В редакцию представляется:</h3>
+              <ul class="authors__list authors__list">
+
+                <li class="authors__item">
+                  <span class="authors__item-number">01</span>
+                  <p class="authors__item-text">Сопроводительное письмо, подписанное всеми авторами статьи (Образец
+                    письма в редакцию журнала "Георесурсы"). Письмо высылается в редакцию по электронной почте в
+                    отсканированном виде.</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">02</span>
+                  <p class="authors__item-text">Рекомендация научного руководителя (для аспирантов).</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">03</span>
+                  <p class="authors__item-text">Аннотация объемом не менее 150 слов (на русском и английском
+                    языках)(рекомендации по подготовке аннотаций см. ниже).</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">04</span>
+                  <p class="authors__item-text">Ключевые слова (на русском и английском языках).</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">05</span>
+                  <p class="authors__item-text">Сведения обо всех авторах (Ф.И.О. полностью на русском языке и в
+                    транслитерации, ученая степень, ученое звание, должность, наименование учреждения, в котором
+                    работает автор, почтовый адрес, e-mail и телефон для связи (ответственного автора).</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">06</span>
+                  <p class="authors__item-text">Статья, соответствующая правилам оформления статей в журнале
+                    «Георесурсы».</p>
+                </li>
+                <!-- /.authors__item -->
+
+              </ul>
+            </div>
+            <!-- /.authors__list-container -->
+
+            <div class="authors__text-container">
+              <h3 class="authors__text-title authors__text-title--low">Правила оформления статьи</h3>
+              <p class="authors__text">Объем статьи не ограничен. Статья представляется в формате Microsoft Word, шрифт
+                – Times New Roman, размер – 14 пт., межстрочный интервал – одинарный, форматирование – по ширине; все
+                поля – по 20 мм. Текст, рисунки, таблицы и подписи к ним должны быть поданы как в самом варианте статьи,
+                так и в отдельных файлах.
+              </p>
+            </div>
+            <!-- /.authors__text-container -->
+
+            <div class="authors__list-container">
+              <h3 class="authors__list-title authors__list-title--low">Материал статьи должен быть структурирован:</h3>
+              <ul class="authors__list authors__list">
+
+                <li class="authors__item">
+                  <span class="authors__item-number">01</span>
+                  <p class="authors__item-text">Введение, обзор литературы</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">02</span>
+                  <p class="authors__item-text">Материалы и методы</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">03</span>
+                  <p class="authors__item-text">Результаты</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">04</span>
+                  <p class="authors__item-text">Обсуждение и выводы</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">05</span>
+                  <p class="authors__item-text">Благодарности/Финансирование</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-number">06</span>
+                  <p class="authors__item-text">Список литературы</p>
+                </li>
+                <!-- /.authors__item -->
+
+              </ul>
+            </div>
+            <!-- /.authors__list-container -->
+
+            <div class="authors__text-container">
+              <h3 class="authors__text-title authors__text-title--low">Таблицы</h3>
+              <p class="authors__text">Таблицы выполняются в Word, Excel, не рисунком.</p>
+            </div>
+            <!-- /.authors__text-container -->
+
+            <div class="authors__text-container">
+              <h3 class="authors__text-title authors__text-title--low">Графические материалы</h3>
+              <p class="authors__text"><span class="bold">Необходимо высылать оригиналы графических файлов.</span>
+                Рисунки предоставляются в форматах Excel, Origin, Adobe Illustrator, Photoshop, CorelDRAW. Разрешение
+                рисунков и фотографий в формате jpg, tif должно быть не менее 300 dpi. Рисунки должны быть четкими.
+                Текст на графике должен быть хорошо читаемым. Каждый рисунок должен быть снабжен подрисуночной подписью.
+                Редакция вправе запросить у авторов для исправления/корректировки оригиналы иллюстративного материала к
+                статье в случае плохого качества предоставленных материалов.</p>
+            </div>
+            <!-- /.authors__text-container -->
+
+            <div class="authors__text-container">
+              <h3 class="authors__text-title authors__text-title--low">Список литературы</h3>
+              <p class="authors__text">Пристатейный список литературы должен быть оформлен в алфавитном порядке с
+                обязательным указанием библиографических данных источника. Ссылки на источник помещают в тексте статьи в
+                круглых скобках в виде: (Марочник, Сучков, 1984); (Егорова и др., 1986; Атлас горных пород, 1965).</p>
+            </div>
+            <!-- /.authors__text-container -->
+
+            <div class="authors__list-container authors__list-container--color">
+              <h3 class="authors__list-title authors__list-title--low">Образец списка литературы:</h3>
+              <ul class="authors__list">
+                <li class="authors__item">
+                  <p class="authers__item-text">Статьи: Муслимов Р.Х. (2017). Решение фундаментальных проблем нефтяной
+                    отрасли России – основа масштабного перехода к инновационному развитию. Георесурсы, 19(3),
+                    с. 151-158. DOI: https://doi.org/10.18599/grs.19.3.1
+                  </p>
+                </li>
+                <li class="authors__item">
+                  <p class="authors__item-text">Книги: Муслимов Р.Х. (2012). Нефтеотдача; прошлое, настоящее, будущее.
+                    Казань: ФЭН, 664 с.</p>
+                </li>
+              </ul>
+            </div>
+            <!-- /.authors__list-container authors__list-container--color -->
+
+            <div class="authors__text-container">
+              <p class="authors__text">Источники в списке литературы должны быть представлены как в кириллице, так и в
+                латинице. Необходимо использовать систему транслитерации BGN
+                <a href="#" class="authors__text-link">(ссылка на сайт онлайн системы транслитерации).</a>
+              </p>
+            </div>
+            <!-- /.authors__text-container -->
+
+            <div class="authors__list-container authors__list-container--color">
+              <h3 class="authors__list-title authors__list-title--low">Образец списка литературы в латинице:</h3>
+              <ul class="authors__list">
+                <li class="authors__item">
+                  <p class="authers__item-text">Статьи: Muslimov R.Kh. (2017). Solving the Fundamental Problems of the
+                    Russian Oil Industry is the Basis for a Large-Scale Transition to Innovative Development. Georesursy
+                    = Georesources,  19(3), pp. 151-158. DOI: https://doi.org/10.18599/grs.19.3.1
+                  </p>
+                </li>
+                <li class="authors__item">
+                  <p class="authors__item-text">Книги: Muslimov R.Kh. (2012). Nefteotdacha; proshloe, nastoyaschee,
+                    budeschee [Oil recovery: past, present, future]. Kazan: Fen Publ, 664 p. (In Russ.).</p>
+                </li>
+              </ul>
+            </div>
+            <!-- /.authors__list-container authors__list-container--color -->
+
+            <div class="authors__text-container">
+              <p class="authors__text">В случае возникновения проблем с техническим оформлением статьи, качественным
+                переводом пристатейной информации и транслитерации списка литературы, можно обращаться в Редакцию
+                журнала (e-mail: mail@geors.ru, тел: +7 843 239-05-30).
+              </p>
+            </div>
+            <!-- /.authors__text-container -->
+
+            <div class="authors__text-container">
+              <p class="authors__text">Допускается подача статьи на рассмотрение без требуемого редакцией технического
+                оформления (а именно, технического оформления списка литературы и ссылок на используемые источники в
+                тексте, включения пристатейной англоязычной части статьи). Статью необходимо будет оформить согласно
+                правилам журнала после окончательного решения о принятии статьи к публикации.
+              </p>
+            </div>
+            <!-- /.authors__text-container -->
+
+            <div class="authors__text-container">
+              <h3 class="authors__text-title authors__text-title--low">Рекомендации по подготовке аннотации статьи</h3>
+              <p class="authors__text">Аннотации (рефераты, авторские резюме) в русскоязычном издании являются основным
+                и, как правило, единственным (на иностранном языке для зарубежных ученых) источником информации о
+                содержании статьи и изложенных в ней результатах исследований. Зарубежные специалисты по аннотации
+                оценивают публикацию, определяют свой интерес к работе российского ученого, могут использовать ее в
+                своей публикации и сделать на неё ссылку, открыть дискуссию с автором, запросить полный текст и т.д.
+                Одним из проверенных вариантов аннотации является краткое повторение в ней структуры статьи, включающей
+                введение, цели и задачи, методы, результаты, заключение (в явном или в неявном виде).</p>
+            </div>
+            <!-- /.authors__text-container -->
+
+            <div class="authors__list-container">
+              <h3 class="authors__list-title authors__list-title--low">Материал статьи должен быть структурирован:</h3>
+              <ul class="authors__list authors__list">
+
+                <li class="authors__item">
+                  <span class="authors__item-line">—</span>
+                  <p class="authors__item-text">информативными (не содержать общих слов);</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-line">—</span>
+                  <p class="authors__item-text">оригинальными;</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-line">—</span>
+                  <p class="authors__item-text">содержательными (отражать основное содержание статьи и результаты
+                    исследований);</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-line">—</span>
+                  <p class="authors__item-text">структурированными (следовать логике описания результатов в статье);</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-line">—</span>
+                  <p class="authors__item-text">«англоязычными» (написаны качественным английским языком);</p>
+                </li>
+                <!-- /.authors__item -->
+
+                <li class="authors__item">
+                  <span class="authors__item-line">—</span>
+                  <p class="authors__item-text">компактными (укладываться в объем от 150 до 250 слов).</p>
+                </li>
+                <!-- /.authors__item -->
+
+              </ul>
+            </div>
+            <!-- /.authors__list-container -->
+
+            <div class="authors__text-container">
+              <p class="authors__text">Аннотация является кратким резюме большей по объему работы, имеющей научный
+                характер. Аннотация к статье призвана выполнять функцию независимого от статьи источника информации,
+                поэтому должно быть понятным без обращения к самой публикации. Сведения, содержащиеся в заглавии статьи,
+                не должны повторяться в тексте аннотации. Исторические справки, если они не составляют основное
+                содержание документа, описание ранее опубликованных работ и общеизвестные положения в аннотации не
+                приводятся. Сокращения и условные обозначения, кроме общеупотребительных, применяют в исключительных
+                случаях или дают их расшифровку и определения при первом употреблении в аннотации. В аннотации не
+                делаются ссылки на использованные в статье литературные источники.
+              </p>
+            </div>
+            <!-- /.authors__text-container -->
+
+          </div>
+          <!-- /.authors__content -->
+
+        </div>
+      </div>
+    </main>
+    <!-- /.page-view -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__logo-container">
+          <a href="index.html" class="footer__logo">
+            <picture>
+              <source type="image/webp" srcset="
+                                          img/content/logo-georesursy.webp,
+                                          img/content/logo-georesursy@2x.webp 2x
+                            ">
+              <img src="img/content/logo-georesursy.png" srcset="img/content/logo-georesursy@2x.png 2x" width="69" height="61" alt="Логотип Георесурсы">
+            </picture>
+          </a>
+          <div class="footer__text-container">
+            <h3 class="footer__title">Георесурсы</h3>
+            <p class="footer__text">ISSN 1608-5043 (Print)</p>
+            <p class="footer__text">ISSN 1608-5078 (Online)</p>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Редакционная коллегия</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Редакционная политика</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--lk">
+              <a href="#" class="footer__nav-link footer__nav-link--lk" data-modal="login">Личный кабинет</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Рецензирование</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Индексирование</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--archive">
+              <a href="archive.html" class="footer__nav-link">Архив</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">О журнале</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Для авторов</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--contacts">
+              <a href="#" class="footer__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__inputs">
+          <button class="footer__search-btn btn-reset" data-modal="search">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite.svg#icon-search-2"></use>
+            </svg>
+          </button>
+          <div class="footer__change-lang">
+            <div class="footer__input-box">
+              <input class="footer__radio-input visually-hidden" type="radio" name="lang-footer" id="lang-rus-footer" checked="">
+              <label class="footer__radio-label" for="lang-rus-footer">rus</label>
+            </div>
+            <div class="footer__input-box">
+              <input class="footer__radio-input visually-hidden" type="radio" name="lang-footer" id="lang-eng-footer">
+              <label class="footer__radio-label" for="lang-eng-footer">eng</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+
+    <div class="modal modal--login">
+      <div class="modal__overlay"></div>
+      <div class="main-nav__login login">
+        <div class="login__title">
+          <svg width="17" height="17">
+            <use xlink:href="img/sprite.svg#icon-lk"></use>
+          </svg>
+          <span>Личный кабинет</span>
+        </div>
+        <form class="login__form" action="#" method="post">
+          <div class="login__input-box">
+            <input type="text" name="login-name" id="login-name" placeholder="Логин">
+            <label class="visually-hidden" for="login-name">Введите логин</label>
+          </div>
+          <div class="login__input-box">
+            <input type="password" name="login-password" id="login-password" placeholder="Пароль">
+            <label class="visually-hidden" for="login-password">Введите пароль</label>
+          </div>
+          <div class="login__btn-group">
+            <a href="#" class="login__btn btn btn--underline btn-reset">
+              <span>Напомнить</span>
+            </a>
+            <button class="login__btn btn btn--white btn-reset" type="submit">Войти</button>
+          </div>
+        </form>
+        <a href="#" class="login__btn-reg btn btn--underline btn-reset">
+          <span>Регистрация</span>
+          <svg width="30" height="8">
+            <use xlink:href="img/sprite.svg#icon-arrow-right-long"></use>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+    <!-- /.modal modal--login -->
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
