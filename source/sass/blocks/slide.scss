@@ -6,6 +6,7 @@
       align-items: flex-end;
       width: 100%;
       max-width: 287px;
+      vertical-align: middle;
 
       @include viewport--sm {
         max-width: 220px;

@@ -70,10 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
 /* eslint-disable */
 /* stylelint-disable */
 
-const swiper = document.querySelector(`.promo__slider-container`);
+const swiper1 = document.querySelector('.promo__slider-container');
+const swiper2 = document.querySelector('.magazine-view__slider-container');
 
-if (swiper) {
-  new Swiper(swiper, {
+if (swiper1) {
+  new Swiper(swiper1, {
     slidesPerView: 'auto',
     effect: 'coverflow',
     breakpoints: {
@@ -109,6 +110,27 @@ if (swiper) {
     navigation: {
       nextEl: '.promo__slider-btn-next',
       prevEl: '.promo__slider-btn-prev',
+    },
+  });
+}
+
+if (swiper2) {
+  new Swiper(swiper2, {
+
+    loop: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      }
+    },
+    navigation: {
+      nextEl: '.magazine-view__slider-btn-next',
+      prevEl: '.magazine-view__slider-btn-prev',
     },
   });
 }
