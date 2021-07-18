@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>Георесурсы</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__main-nav main-nav">
+          <ul class="main-nav__list">
+
+            <li class="main-nav__item main-nav__item--logo">
+              <a href="index.html" class="main-nav__logo">
+                <picture>
+                  <source type="image/webp" srcset="
+                                img/content/logo-georesursy.webp,
+                                img/content/logo-georesursy@2x.webp 2x
+                  ">
+                  <img src="img/content/logo-georesursy.png" srcset="img/content/logo-georesursy@2x.png 2x" width="69" height="61" alt="Логотип Георесурсы">
+                </picture>
+              </a>
+              <div class="main-nav__text-container">
+                <h1 class="main-nav__title">Георесурсы</h1>
+                <p class="main-nav__text">ISSN 1608-5043 (Print)</p>
+                <p class="main-nav__text">ISSN 1608-5078 (Online)</p>
+              </div>
+            </li>
+            <!-- /.main-nav__item -->
+
+            <li class="main-nav__item main-nav__item--site-nav">
+              <ul class="main-nav__link-list">
+                <li class="main-nav__link-item dropdown dropdown--mobile">
+                  <a href="#" class="main-nav__link main-nav__link--dropdown hover-line dropdown__btn">
+                    <span class="main-nav__link-text">О журнале</span>
+                    <svg width="7" height="4">
+                      <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                    </svg>
+                  </a>
+                  <ul class="main-nav__sub-list dropdown__content">
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">
+                        <span class="main-nav__link-text">О журнале</span>
+                        <svg width="7" height="4">
+                          <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Индексирование</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Архив</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Контакты</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-nav__link-item">
+                  <a href="archive.html" class="main-nav__link hover-line">Архив</a>
+                </li>
+                <li class="main-nav__link-item dropdown dropdown--mobile">
+                  <a href="#" class="main-nav__link main-nav__link--dropdown hover-line dropdown__btn">
+                    <span class="main-nav__link-text">Для авторов</span>
+                    <svg width="7" height="4">
+                      <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                    </svg>
+                  </a>
+                  <ul class="main-nav__sub-list dropdown__content">
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">
+                        <span class="main-nav__link-text">Для авторов</span>
+                        <svg width="7" height="4">
+                          <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Редакционная политика</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Редакционная коллегия</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Редакция</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-nav__link-item">
+                  <a href="#" class="main-nav__link hover-line">Контакты</a>
+                </li>
+              </ul>
+              <button class="main-nav__close-menu btn-reset">
+                <svg width="25" height="24">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+                <span class="visually-hidden">Закрыть меню</span>
+              </button>
+            </li>
+            <!-- /.main-nav__item -->
+
+            <li class="main-nav__item main-nav__item--inputs">
+              <div class="main-nav__change-lang">
+                <div class="main-nav__input-box">
+                  <input class="main-nav__radio-input visually-hidden" type="radio" name="lang" id="lang-rus" checked="">
+                  <label class="main-nav__radio-label" for="lang-rus">rus</label>
+                </div>
+                <div class="main-nav__input-box">
+                  <input class="main-nav__radio-input visually-hidden" type="radio" name="lang" id="lang-eng">
+                  <label class="main-nav__radio-label" for="lang-eng">eng</label>
+                </div>
+              </div>
+              <button class="main-nav__search-btn btn-reset hover-line" data-modal="search">
+                <svg width="17" height="17">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+                <span>Поиск</span>
+              </button>
+
+              <div class="modal modal--search">
+                <div class="modal__overlay"></div>
+                <div class="main-nav__input-search">
+                  <input type="text" name="main-search" id="main-search" placeholder="Введите слово или фразу">
+                  <label class="visually-hidden" for="main-search">Поиск по сайту</label>
+                </div>
+              </div>
+              <!-- /.modal modal--search -->
+
+            </li>
+            <!-- /.main-nav__item -->
+
+            <li class="main-nav__item main-nav__item--user-nav">
+              <div class="main-nav__link-container">
+                <a href="#" class="main-nav__link" data-modal="login">
+                  <svg width="17" height="17">
+                    <use xlink:href="img/sprite.svg#icon-lk"></use>
+                  </svg>
+                  <span>Личный кабинет</span>
+                </a>
+              </div>
+              <div class="main-nav__link-container">
+                <a href="#" class="main-nav__link">
+                  <svg width="18" height="17">
+                    <use xlink:href="img/sprite.svg#icon-add-manuscript"></use>
+                  </svg>
+                  <span>Отправить рукопись</span>
+                </a>
+              </div>
+            </li>
+            <!-- /.main-nav__item -->
+
+          </ul>
+          <button class="main-nav__burger">
+            <svg width="32" height="21">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+            </svg>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- /.header -->
+
+    <main class="page-view politics">
+      <div class="politics__container container">
+        <div class="politics__wrapper">
+
+          <div class="politics__title-container">
+            <div class="politics__breadcrumbs breadcrumbs">
+              <a href="main.html">Георесурсы /</a>
+            </div>
+            <h2 class="politics__title">Редакционная политика</h2>
+          </div>
+
+          <div class="politics__content-container">
+
+            <div class="politics__content">
+
+              <div class="politics__point accordion open">
+
+                <button class="politics__point-btn btn btn-reset accordion__control">Цели и задачи</button>
+                <div class="politics__list-container accordion__content">
+                  <ul class="politics__list">
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">01</span>
+                      <p class="politics__item-text">Целью журнала "Георесурсы" является создание научно-информационной
+                        площадки для обмена накопленными знаниями и профессиональным опытом между специалистами из
+                        университетов, научных центров, промышленной индустрии и государственных структур и
+                        представления
+                        самых последних результатов в области исследования и сохранения недр Земли, разведки и
+                        разработки
+                        природных ресурсов.</p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">02</span>
+                      <p class="politics__item-text">Редакция журнала "Георесурсы" ставит целью своей работы развитие
+                        научного взаимодействия, направленного на повышение доступности обмена накопленными знаниями и
+                        профессиональным опытом, формирование научно-информационной среды, оперативное и достоверное
+                        распространение информации об исследованиях, проводимых специалистами на территории России,
+                        ближнего и дальнего зарубежья, их плодотворному сотрудничеству.
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">03</span>
+                      <p class="politics__item-text">Печатная версия журнала издается на русском языке в соответствии с
+                        международными стандартами и распространяется на территории Российской Федерации и стран СНГ.
+                        Журнал поступает в библиотеки, государственные органы власти, научные и образовательные
+                        учреждения, в профильные научно-исследовательские и производственные организации, часть тиража
+                        распространяется на конференциях, совещаниях, семинарах, выставках.
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">04</span>
+                      <p class="politics__item-text">Авторами и читателями журнала являются ученые и производственники,
+                        аспиранты и научные сотрудники из научных центров, университетов, промышленной индустрии и
+                        государственных структур Российской Федерации, ближнего и дальнего зарубежья.
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">05</span>
+                      <p class="politics__item-text">В журнале публикуются оригинальные научные статьи, краткие
+                        сообщения,
+                        отчеты о результатах полевых и промысловых работ, дискуссионные статьи, материалы конференций,
+                        обзорные статьи по проблемам развития и освоения минерально-сырьевой базы углеводородов и
+                        твердых
+                        полезных ископаемых (Рубрики журнала "Георесурсы"). Редакционной коллегией журнала принимаются к
+                        рассмотрению только оригинальные, ранее нигде не публиковавшиеся статьи и не предназначенные к
+                        одновременной публикации в других изданиях. Журнал издается ежеквартально график выхода номеров
+                        журнала.
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">06</span>
+                      <p class="politics__item-text">Редакционная коллегия журнала – ведущие ученые и специалисты
+                        научно-исследовательских и производственных организаций России и дальнего зарубежья.
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">07</span>
+                      <p class="politics__item-text">С 2016 года большинство статей, опубликованных в журнале
+                        "Георесурсы"
+                        на русском языке, Редакция переводит на английский язык. Переводные статьи публикуются на сайте
+                        журнала в открытом доступе в течение нескольких месяцев после официальной публикации статьи в
+                        журнале (задержка связана с переводом статьи).
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">08</span>
+                      <p class="politics__item-text">Редакция журнала прикладывает все силы к тому, чтобы содействовать
+                        развитию международного сотрудничества в целях повышения эффективности изучения земных недр,
+                        наладить обмен мнениями между исследователями из разных регионов и стран.
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                  </ul>
+                  <!-- /.politics__list -->
+                </div>
+                <!-- /.politics__list-container accordion__content -->
+              </div>
+              <!-- /.politics__point accordion -->
+
+              <div class="politics__point accordion">
+
+                <button class="politics__point-btn btn btn-reset accordion__control">Основные принципы редакционной
+                  политики журнала «Георесурсы»</button>
+                <div class="politics__list-container accordion__content">
+                  <ul class="politics__list">
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">01</span>
+                      <p class="politics__item-text">Соблюдение публикационной этики, правовую основу которой составляют
+                        международные стандарты: положения, принятые на 2-ой Всемирной конференции по вопросам
+                        соблюдения добросовестности научных исследований (Сингапур, 22-24 июля 2010 г.); положения,
+                        разработанные Комитетом по этике научных публикаций (The Committee on Publication Ethics – COPE)
+                        и нормы главы 70 «Авторское право» Гражданского кодекса Российской Федерации;
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">02</span>
+                      <p class="politics__item-text">Открытый доступ ко всему контенту журнала. Георесурсы - журнал
+                        открытого доступа (Open Access): в целях, не противоречащих действующему законодательству, все
+                        пользователи могут абсолютно свободно и бесплатно читать, загружать, копировать, передавать, а
+                        также ссылаться на публикуемые материалы в соответствии с принципами Будапештской инициативы
+                        открытого доступа (BOAI). Материалы журнала "Георесурсы" доступны по лицензии Creative Commons
+                        «Attribution» («Атрибуция») 4.0 Всемирная (CC BY 4.0, лицензия «С указанием авторства»).
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">03</span>
+                      <p class="politics__item-text">Обеспечение высокого качества и достоверности публикуемых
+                        материалов; основательности, оригинальности, прозрачности, полноты публикаций; соблюдение
+                        редакторской независимости и добросовестности.
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">04</span>
+                      <p class="politics__item-text">Отсутствие платы за подготовку статей к публикации и публикацию
+                        статей.
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">05</span>
+                      <p class="politics__item-text">Обеспечение тщательного независимого рецензирования всех
+                        представляемых для публикации в журнале материалов. Рецензирование и редактирование всех
+                        поступающих рукописей редакция журнала осуществляет в соответствии с опубликованным на
+                        официальном сайте журнала порядком рецензирования. Все научные статьи, поступившие в редакцию
+                        журнала "Георесурсы", проходят обязательное слепое рецензирование.
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                  </ul>
+                  <!-- /.politics__list -->
+                </div>
+                <!-- /.politics__list-container accordion__content -->
+              </div>
+              <!-- /.politics__point accordion -->
+
+              <div class="politics__point accordion">
+
+                <button class="politics__point-btn btn btn-reset accordion__control">Периодичность</button>
+                <div class="politics__list-container accordion__content">
+                  <ul class="politics__list">
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">01</span>
+                      <p class="politics__item-text">Соблюдение публикационной этики, правовую основу которой составляют
+                        международные стандарты: положения, принятые на 2-ой Всемирной конференции по вопросам
+                        соблюдения добросовестности научных исследований (Сингапур, 22-24 июля 2010 г.); положения,
+                        разработанные Комитетом по этике научных публикаций (The Committee on Publication Ethics – COPE)
+                        и нормы главы 70 «Авторское право» Гражданского кодекса Российской Федерации;
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">02</span>
+                      <p class="politics__item-text">Открытый доступ ко всему контенту журнала. Георесурсы - журнал
+                        открытого доступа (Open Access): в целях, не противоречащих действующему законодательству, все
+                        пользователи могут абсолютно свободно и бесплатно читать, загружать, копировать, передавать, а
+                        также ссылаться на публикуемые материалы в соответствии с принципами Будапештской инициативы
+                        открытого доступа (BOAI). Материалы журнала "Георесурсы" доступны по лицензии Creative Commons
+                        «Attribution» («Атрибуция») 4.0 Всемирная (CC BY 4.0, лицензия «С указанием авторства»).
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                  </ul>
+                  <!-- /.politics__list -->
+                </div>
+                <!-- /.politics__list-container accordion__content -->
+              </div>
+              <!-- /.politics__point accordion -->
+
+              <div class="politics__point accordion">
+
+                <button class="politics__point-btn btn btn-reset accordion__control">Политика свободного доступа</button>
+                <div class="politics__list-container accordion__content">
+                  <ul class="politics__list">
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">01</span>
+                      <p class="politics__item-text">Соблюдение публикационной этики, правовую основу которой составляют
+                        международные стандарты: положения, принятые на 2-ой Всемирной конференции по вопросам
+                        соблюдения добросовестности научных исследований (Сингапур, 22-24 июля 2010 г.); положения,
+                        разработанные Комитетом по этике научных публикаций (The Committee on Publication Ethics – COPE)
+                        и нормы главы 70 «Авторское право» Гражданского кодекса Российской Федерации;
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">02</span>
+                      <p class="politics__item-text">Открытый доступ ко всему контенту журнала. Георесурсы - журнал
+                        открытого доступа (Open Access): в целях, не противоречащих действующему законодательству, все
+                        пользователи могут абсолютно свободно и бесплатно читать, загружать, копировать, передавать, а
+                        также ссылаться на публикуемые материалы в соответствии с принципами Будапештской инициативы
+                        открытого доступа (BOAI). Материалы журнала "Георесурсы" доступны по лицензии Creative Commons
+                        «Attribution» («Атрибуция») 4.0 Всемирная (CC BY 4.0, лицензия «С указанием авторства»).
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                  </ul>
+                  <!-- /.politics__list -->
+                </div>
+                <!-- /.politics__list-container accordion__content -->
+              </div>
+              <!-- /.politics__point accordion -->
+
+              <div class="politics__point accordion">
+
+                <button class="politics__point-btn btn btn-reset accordion__control">Архивация</button>
+                <div class="politics__list-container accordion__content">
+                  <ul class="politics__list">
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">01</span>
+                      <p class="politics__item-text">Соблюдение публикационной этики, правовую основу которой составляют
+                        международные стандарты: положения, принятые на 2-ой Всемирной конференции по вопросам
+                        соблюдения добросовестности научных исследований (Сингапур, 22-24 июля 2010 г.); положения,
+                        разработанные Комитетом по этике научных публикаций (The Committee on Publication Ethics – COPE)
+                        и нормы главы 70 «Авторское право» Гражданского кодекса Российской Федерации;
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">02</span>
+                      <p class="politics__item-text">Открытый доступ ко всему контенту журнала. Георесурсы - журнал
+                        открытого доступа (Open Access): в целях, не противоречащих действующему законодательству, все
+                        пользователи могут абсолютно свободно и бесплатно читать, загружать, копировать, передавать, а
+                        также ссылаться на публикуемые материалы в соответствии с принципами Будапештской инициативы
+                        открытого доступа (BOAI). Материалы журнала "Георесурсы" доступны по лицензии Creative Commons
+                        «Attribution» («Атрибуция») 4.0 Всемирная (CC BY 4.0, лицензия «С указанием авторства»).
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                  </ul>
+                  <!-- /.politics__list -->
+                </div>
+                <!-- /.politics__list-container accordion__content -->
+              </div>
+              <!-- /.politics__point accordion -->
+
+              <div class="politics__point accordion">
+
+                <button class="politics__point-btn btn btn-reset accordion__control">Рецензирование</button>
+                <div class="politics__list-container accordion__content">
+                  <ul class="politics__list">
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">01</span>
+                      <p class="politics__item-text">Соблюдение публикационной этики, правовую основу которой составляют
+                        международные стандарты: положения, принятые на 2-ой Всемирной конференции по вопросам
+                        соблюдения добросовестности научных исследований (Сингапур, 22-24 июля 2010 г.); положения,
+                        разработанные Комитетом по этике научных публикаций (The Committee on Publication Ethics – COPE)
+                        и нормы главы 70 «Авторское право» Гражданского кодекса Российской Федерации;
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">02</span>
+                      <p class="politics__item-text">Открытый доступ ко всему контенту журнала. Георесурсы - журнал
+                        открытого доступа (Open Access): в целях, не противоречащих действующему законодательству, все
+                        пользователи могут абсолютно свободно и бесплатно читать, загружать, копировать, передавать, а
+                        также ссылаться на публикуемые материалы в соответствии с принципами Будапештской инициативы
+                        открытого доступа (BOAI). Материалы журнала "Георесурсы" доступны по лицензии Creative Commons
+                        «Attribution» («Атрибуция») 4.0 Всемирная (CC BY 4.0, лицензия «С указанием авторства»).
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                  </ul>
+                  <!-- /.politics__list -->
+                </div>
+                <!-- /.politics__list-container accordion__content -->
+              </div>
+              <!-- /.politics__point accordion -->
+
+              <div class="politics__point accordion">
+
+                <button class="politics__point-btn btn btn-reset accordion__control">Индексирование</button>
+                <div class="politics__list-container accordion__content">
+                  <ul class="politics__list">
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">01</span>
+                      <p class="politics__item-text">Соблюдение публикационной этики, правовую основу которой составляют
+                        международные стандарты: положения, принятые на 2-ой Всемирной конференции по вопросам
+                        соблюдения добросовестности научных исследований (Сингапур, 22-24 июля 2010 г.); положения,
+                        разработанные Комитетом по этике научных публикаций (The Committee on Publication Ethics – COPE)
+                        и нормы главы 70 «Авторское право» Гражданского кодекса Российской Федерации;
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">02</span>
+                      <p class="politics__item-text">Открытый доступ ко всему контенту журнала. Георесурсы - журнал
+                        открытого доступа (Open Access): в целях, не противоречащих действующему законодательству, все
+                        пользователи могут абсолютно свободно и бесплатно читать, загружать, копировать, передавать, а
+                        также ссылаться на публикуемые материалы в соответствии с принципами Будапештской инициативы
+                        открытого доступа (BOAI). Материалы журнала "Георесурсы" доступны по лицензии Creative Commons
+                        «Attribution» («Атрибуция») 4.0 Всемирная (CC BY 4.0, лицензия «С указанием авторства»).
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                  </ul>
+                  <!-- /.politics__list -->
+                </div>
+                <!-- /.politics__list-container accordion__content -->
+              </div>
+              <!-- /.politics__point accordion -->
+
+              <div class="politics__point accordion">
+
+                <button class="politics__point-btn btn btn-reset accordion__control">Этика научных публикаций</button>
+                <div class="politics__list-container accordion__content">
+                  <ul class="politics__list">
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">01</span>
+                      <p class="politics__item-text">Соблюдение публикационной этики, правовую основу которой составляют
+                        международные стандарты: положения, принятые на 2-ой Всемирной конференции по вопросам
+                        соблюдения добросовестности научных исследований (Сингапур, 22-24 июля 2010 г.); положения,
+                        разработанные Комитетом по этике научных публикаций (The Committee on Publication Ethics – COPE)
+                        и нормы главы 70 «Авторское право» Гражданского кодекса Российской Федерации;
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">02</span>
+                      <p class="politics__item-text">Открытый доступ ко всему контенту журнала. Георесурсы - журнал
+                        открытого доступа (Open Access): в целях, не противоречащих действующему законодательству, все
+                        пользователи могут абсолютно свободно и бесплатно читать, загружать, копировать, передавать, а
+                        также ссылаться на публикуемые материалы в соответствии с принципами Будапештской инициативы
+                        открытого доступа (BOAI). Материалы журнала "Георесурсы" доступны по лицензии Creative Commons
+                        «Attribution» («Атрибуция») 4.0 Всемирная (CC BY 4.0, лицензия «С указанием авторства»).
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                  </ul>
+                  <!-- /.politics__list -->
+                </div>
+                <!-- /.politics__list-container accordion__content -->
+              </div>
+              <!-- /.politics__point accordion -->
+
+              <div class="politics__point accordion">
+
+                <button class="politics__point-btn btn btn-reset accordion__control">Учредитель</button>
+                <div class="politics__list-container accordion__content">
+                  <ul class="politics__list">
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">01</span>
+                      <p class="politics__item-text">Соблюдение публикационной этики, правовую основу которой составляют
+                        международные стандарты: положения, принятые на 2-ой Всемирной конференции по вопросам
+                        соблюдения добросовестности научных исследований (Сингапур, 22-24 июля 2010 г.); положения,
+                        разработанные Комитетом по этике научных публикаций (The Committee on Publication Ethics – COPE)
+                        и нормы главы 70 «Авторское право» Гражданского кодекса Российской Федерации;
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">02</span>
+                      <p class="politics__item-text">Открытый доступ ко всему контенту журнала. Георесурсы - журнал
+                        открытого доступа (Open Access): в целях, не противоречащих действующему законодательству, все
+                        пользователи могут абсолютно свободно и бесплатно читать, загружать, копировать, передавать, а
+                        также ссылаться на публикуемые материалы в соответствии с принципами Будапештской инициативы
+                        открытого доступа (BOAI). Материалы журнала "Георесурсы" доступны по лицензии Creative Commons
+                        «Attribution» («Атрибуция») 4.0 Всемирная (CC BY 4.0, лицензия «С указанием авторства»).
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                  </ul>
+                  <!-- /.politics__list -->
+                </div>
+                <!-- /.politics__list-container accordion__content -->
+              </div>
+              <!-- /.politics__point accordion -->
+
+              <div class="politics__point accordion">
+
+                <button class="politics__point-btn btn btn-reset accordion__control">Плата за публикацию</button>
+                <div class="politics__list-container accordion__content">
+                  <ul class="politics__list">
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">01</span>
+                      <p class="politics__item-text">Соблюдение публикационной этики, правовую основу которой составляют
+                        международные стандарты: положения, принятые на 2-ой Всемирной конференции по вопросам
+                        соблюдения добросовестности научных исследований (Сингапур, 22-24 июля 2010 г.); положения,
+                        разработанные Комитетом по этике научных публикаций (The Committee on Publication Ethics – COPE)
+                        и нормы главы 70 «Авторское право» Гражданского кодекса Российской Федерации;
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">02</span>
+                      <p class="politics__item-text">Открытый доступ ко всему контенту журнала. Георесурсы - журнал
+                        открытого доступа (Open Access): в целях, не противоречащих действующему законодательству, все
+                        пользователи могут абсолютно свободно и бесплатно читать, загружать, копировать, передавать, а
+                        также ссылаться на публикуемые материалы в соответствии с принципами Будапештской инициативы
+                        открытого доступа (BOAI). Материалы журнала "Георесурсы" доступны по лицензии Creative Commons
+                        «Attribution» («Атрибуция») 4.0 Всемирная (CC BY 4.0, лицензия «С указанием авторства»).
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                  </ul>
+                  <!-- /.politics__list -->
+                </div>
+                <!-- /.politics__list-container accordion__content -->
+              </div>
+              <!-- /.politics__point accordion -->
+
+              <div class="politics__point accordion">
+
+                <button class="politics__point-btn btn btn-reset accordion__control">Политика раскрытия и конфликты интересов</button>
+                <div class="politics__list-container accordion__content">
+                  <ul class="politics__list">
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">01</span>
+                      <p class="politics__item-text">Соблюдение публикационной этики, правовую основу которой составляют
+                        международные стандарты: положения, принятые на 2-ой Всемирной конференции по вопросам
+                        соблюдения добросовестности научных исследований (Сингапур, 22-24 июля 2010 г.); положения,
+                        разработанные Комитетом по этике научных публикаций (The Committee on Publication Ethics – COPE)
+                        и нормы главы 70 «Авторское право» Гражданского кодекса Российской Федерации;
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">02</span>
+                      <p class="politics__item-text">Открытый доступ ко всему контенту журнала. Георесурсы - журнал
+                        открытого доступа (Open Access): в целях, не противоречащих действующему законодательству, все
+                        пользователи могут абсолютно свободно и бесплатно читать, загружать, копировать, передавать, а
+                        также ссылаться на публикуемые материалы в соответствии с принципами Будапештской инициативы
+                        открытого доступа (BOAI). Материалы журнала "Георесурсы" доступны по лицензии Creative Commons
+                        «Attribution» («Атрибуция») 4.0 Всемирная (CC BY 4.0, лицензия «С указанием авторства»).
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                  </ul>
+                  <!-- /.politics__list -->
+                </div>
+                <!-- /.politics__list-container accordion__content -->
+              </div>
+              <!-- /.politics__point accordion -->
+
+              <div class="politics__point accordion">
+
+                <button class="politics__point-btn btn btn-reset accordion__control">Заимствования и плагиат</button>
+                <div class="politics__list-container accordion__content">
+                  <ul class="politics__list">
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">01</span>
+                      <p class="politics__item-text">Соблюдение публикационной этики, правовую основу которой составляют
+                        международные стандарты: положения, принятые на 2-ой Всемирной конференции по вопросам
+                        соблюдения добросовестности научных исследований (Сингапур, 22-24 июля 2010 г.); положения,
+                        разработанные Комитетом по этике научных публикаций (The Committee on Publication Ethics – COPE)
+                        и нормы главы 70 «Авторское право» Гражданского кодекса Российской Федерации;
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">02</span>
+                      <p class="politics__item-text">Открытый доступ ко всему контенту журнала. Георесурсы - журнал
+                        открытого доступа (Open Access): в целях, не противоречащих действующему законодательству, все
+                        пользователи могут абсолютно свободно и бесплатно читать, загружать, копировать, передавать, а
+                        также ссылаться на публикуемые материалы в соответствии с принципами Будапештской инициативы
+                        открытого доступа (BOAI). Материалы журнала "Георесурсы" доступны по лицензии Creative Commons
+                        «Attribution» («Атрибуция») 4.0 Всемирная (CC BY 4.0, лицензия «С указанием авторства»).
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                  </ul>
+                  <!-- /.politics__list -->
+                </div>
+                <!-- /.politics__list-container accordion__content -->
+              </div>
+              <!-- /.politics__point accordion -->
+
+              <div class="politics__point accordion">
+
+                <button class="politics__point-btn btn btn-reset accordion__control">Политика размещения препринтов и постпринтов</button>
+                <div class="politics__list-container accordion__content">
+                  <ul class="politics__list">
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">01</span>
+                      <p class="politics__item-text">Соблюдение публикационной этики, правовую основу которой составляют
+                        международные стандарты: положения, принятые на 2-ой Всемирной конференции по вопросам
+                        соблюдения добросовестности научных исследований (Сингапур, 22-24 июля 2010 г.); положения,
+                        разработанные Комитетом по этике научных публикаций (The Committee on Publication Ethics – COPE)
+                        и нормы главы 70 «Авторское право» Гражданского кодекса Российской Федерации;
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                    <li class="politics__item">
+                      <span class="politics__item-number">02</span>
+                      <p class="politics__item-text">Открытый доступ ко всему контенту журнала. Георесурсы - журнал
+                        открытого доступа (Open Access): в целях, не противоречащих действующему законодательству, все
+                        пользователи могут абсолютно свободно и бесплатно читать, загружать, копировать, передавать, а
+                        также ссылаться на публикуемые материалы в соответствии с принципами Будапештской инициативы
+                        открытого доступа (BOAI). Материалы журнала "Георесурсы" доступны по лицензии Creative Commons
+                        «Attribution» («Атрибуция») 4.0 Всемирная (CC BY 4.0, лицензия «С указанием авторства»).
+                      </p>
+                    </li>
+                    <!-- /.politics__item -->
+
+                  </ul>
+                  <!-- /.politics__list -->
+                </div>
+                <!-- /.politics__list-container accordion__content -->
+              </div>
+              <!-- /.politics__point accordion -->
+
+            </div>
+            <!-- /.politics__content -->
+
+            <div class="politics__widget widget">
+              <ul class="widget__logo-list">
+
+                <li class="widget__logo-item">
+                  <a href="#" class="widget__logo">
+                    <img src="img/content/logo-open-access.svg" width="95" height="39" alt="Логотип Open Access">
+                  </a>
+                </li>
+                <!-- /.widget__logo-item -->
+
+                <li class="widget__logo-item">
+                  <a href="#" class="widget__logo">
+                    <img src="img/content/logo-doaj.png" width="95" height="28" alt="Логотип DOAJ">
+                  </a>
+                </li>
+                <!-- /.widget__logo-item -->
+
+                <li class="widget__logo-item">
+                  <a href="#" class="widget__logo">
+                    <img src="img/content/logo-wos.svg" width="109" height="23" alt="Логотип Clarivate - Web of Science">
+                  </a>
+                </li>
+                <!-- /.widget__logo-item -->
+
+                <li class="widget__logo-item">
+                  <a href="#" class="widget__logo">
+                    <img src="img/content/logo-scopus.svg" width="78" height="25" alt="Логотип Scopus">
+                  </a>
+                </li>
+                <!-- /.widget__logo-item -->
+              </ul>
+              <div class="widget__container">
+                <a class="widget__georesursy" href="https://www.scimagojr.com/journalsearch.php?q=21100907383&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=21100907383" alt="SCImago Journal &amp; Country Rank">
+                </a>
+              </div>
+              <a href="#" class="widget__btn btn btn--border btn--arrow btn--nowrap btn-reset">
+                <span>Отправить рукопись</span>
+                <svg width="17" height="8">
+                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+            <!-- /.politics__widget widget -->
+
+          </div>
+          <!-- /.politics__content-container -->
+
+        </div>
+        <!-- /.politics__wrapper -->
+
+      </div>
+      <!-- /.politics__container container -->
+
+    </main>
+    <!-- /.page-view -->
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__logo-container">
+          <a href="index.html" class="footer__logo">
+            <picture>
+              <source type="image/webp" srcset="
+                                          img/content/logo-georesursy.webp,
+                                          img/content/logo-georesursy@2x.webp 2x
+                            ">
+              <img src="img/content/logo-georesursy.png" srcset="img/content/logo-georesursy@2x.png 2x" width="69" height="61" alt="Логотип Георесурсы">
+            </picture>
+          </a>
+          <div class="footer__text-container">
+            <h3 class="footer__title">Георесурсы</h3>
+            <p class="footer__text">ISSN 1608-5043 (Print)</p>
+            <p class="footer__text">ISSN 1608-5078 (Online)</p>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Редакционная коллегия</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Редакционная политика</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--lk">
+              <a href="#" class="footer__nav-link footer__nav-link--lk" data-modal="login">Личный кабинет</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Рецензирование</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Индексирование</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--archive">
+              <a href="archive.html" class="footer__nav-link">Архив</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">О журнале</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Для авторов</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--contacts">
+              <a href="#" class="footer__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__inputs">
+          <button class="footer__search-btn btn-reset" data-modal="search">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite.svg#icon-search-2"></use>
+            </svg>
+          </button>
+          <div class="footer__change-lang">
+            <div class="footer__input-box">
+              <input class="footer__radio-input visually-hidden" type="radio" name="lang-footer" id="lang-rus-footer" checked="">
+              <label class="footer__radio-label" for="lang-rus-footer">rus</label>
+            </div>
+            <div class="footer__input-box">
+              <input class="footer__radio-input visually-hidden" type="radio" name="lang-footer" id="lang-eng-footer">
+              <label class="footer__radio-label" for="lang-eng-footer">eng</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+
+    <div class="modal modal--login">
+      <div class="modal__overlay"></div>
+      <div class="main-nav__login login">
+        <div class="login__title">
+          <svg width="17" height="17">
+            <use xlink:href="img/sprite.svg#icon-lk"></use>
+          </svg>
+          <span>Личный кабинет</span>
+        </div>
+        <form class="login__form" action="#" method="post">
+          <div class="login__input-box">
+            <input type="text" name="login-name" id="login-name" placeholder="Логин">
+            <label class="visually-hidden" for="login-name">Введите логин</label>
+          </div>
+          <div class="login__input-box">
+            <input type="password" name="login-password" id="login-password" placeholder="Пароль">
+            <label class="visually-hidden" for="login-password">Введите пароль</label>
+          </div>
+          <div class="login__btn-group">
+            <a href="#" class="login__btn btn btn--underline btn-reset">
+              <span>Напомнить</span>
+            </a>
+            <button class="login__btn btn btn--white btn-reset" type="submit">Войти</button>
+          </div>
+        </form>
+        <a href="#" class="login__btn-reg btn btn--underline btn-reset">
+          <span>Регистрация</span>
+          <svg width="30" height="8">
+            <use xlink:href="img/sprite.svg#icon-arrow-right-long"></use>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+    <!-- /.modal modal--login -->
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
