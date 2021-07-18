@@ -1,12 +1,17 @@
 .authors {
   position: relative;
+  background: url("../img/bg/bg-lines.png") no-repeat;
+  background-position: top;
+  background-size: 100% 764px;
 }
 
 .authors {
   padding-top: 197px;
+  padding-bottom: 70px;
 
   @include viewport--sm {
     padding-top: 100px;
+    padding-bottom: 40px;
   }
 }
 

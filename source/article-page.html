@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>Георесурсы</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__main-nav main-nav">
+          <ul class="main-nav__list">
+
+            <li class="main-nav__item main-nav__item--logo">
+              <a href="index.html" class="main-nav__logo">
+                <picture>
+                  <source type="image/webp" srcset="
+                                img/content/logo-georesursy.webp,
+                                img/content/logo-georesursy@2x.webp 2x
+                  ">
+                  <img src="img/content/logo-georesursy.png" srcset="img/content/logo-georesursy@2x.png 2x" width="69"
+                    height="61" alt="Логотип Георесурсы">
+                </picture>
+              </a>
+              <div class="main-nav__text-container">
+                <h1 class="main-nav__title">Георесурсы</h1>
+                <p class="main-nav__text">ISSN 1608-5043 (Print)</p>
+                <p class="main-nav__text">ISSN 1608-5078 (Online)</p>
+              </div>
+            </li>
+            <!-- /.main-nav__item -->
+
+            <li class="main-nav__item main-nav__item--site-nav">
+              <ul class="main-nav__link-list">
+                <li class="main-nav__link-item dropdown dropdown--mobile">
+                  <a href="#" class="main-nav__link main-nav__link--dropdown hover-line dropdown__btn">
+                    <span class="main-nav__link-text">О журнале</span>
+                    <svg width="7" height="4">
+                      <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                    </svg>
+                  </a>
+                  <ul class="main-nav__sub-list dropdown__content">
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">
+                        <span class="main-nav__link-text">О журнале</span>
+                        <svg width="7" height="4">
+                          <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Индексирование</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Архив</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Контакты</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-nav__link-item">
+                  <a href="archive.html" class="main-nav__link hover-line">Архив</a>
+                </li>
+                <li class="main-nav__link-item dropdown dropdown--mobile">
+                  <a href="#" class="main-nav__link main-nav__link--dropdown hover-line dropdown__btn">
+                    <span class="main-nav__link-text">Для авторов</span>
+                    <svg width="7" height="4">
+                      <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                    </svg>
+                  </a>
+                  <ul class="main-nav__sub-list dropdown__content">
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">
+                        <span class="main-nav__link-text">Для авторов</span>
+                        <svg width="7" height="4">
+                          <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Редакционная политика</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Редакционная коллегия</a>
+                    </li>
+                    <li class="main-nav__sub-item">
+                      <a href="#" class="main-nav__sub-link">Редакция</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-nav__link-item">
+                  <a href="#" class="main-nav__link hover-line">Контакты</a>
+                </li>
+              </ul>
+              <button class="main-nav__close-menu btn-reset">
+                <svg width="25" height="24">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+                <span class="visually-hidden">Закрыть меню</span>
+              </button>
+            </li>
+            <!-- /.main-nav__item -->
+
+            <li class="main-nav__item main-nav__item--inputs">
+              <div class="main-nav__change-lang">
+                <div class="main-nav__input-box">
+                  <input class="main-nav__radio-input visually-hidden" type="radio" name="lang" id="lang-rus" checked>
+                  <label class="main-nav__radio-label" for="lang-rus">rus</label>
+                </div>
+                <div class="main-nav__input-box">
+                  <input class="main-nav__radio-input visually-hidden" type="radio" name="lang" id="lang-eng">
+                  <label class="main-nav__radio-label" for="lang-eng">eng</label>
+                </div>
+              </div>
+              <button class="main-nav__search-btn btn-reset hover-line" data-modal="search">
+                <svg width="17" height="17">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+                <span>Поиск</span>
+              </button>
+
+              <div class="modal modal--search">
+                <div class="modal__overlay"></div>
+                <div class="main-nav__input-search">
+                  <input type="text" name="main-search" id="main-search" placeholder="Введите слово или фразу">
+                  <label class="visually-hidden" for="main-search">Поиск по сайту</label>
+                </div>
+              </div>
+              <!-- /.modal modal--search -->
+
+            </li>
+            <!-- /.main-nav__item -->
+
+            <li class="main-nav__item main-nav__item--user-nav">
+              <div class="main-nav__link-container">
+                <a href="#" class="main-nav__link" data-modal="login">
+                  <svg width="17" height="17">
+                    <use xlink:href="img/sprite.svg#icon-lk"></use>
+                  </svg>
+                  <span>Личный кабинет</span>
+                </a>
+              </div>
+              <div class="main-nav__link-container">
+                <a href="#" class="main-nav__link">
+                  <svg width="18" height="17">
+                    <use xlink:href="img/sprite.svg#icon-add-manuscript"></use>
+                  </svg>
+                  <span>Отправить рукопись</span>
+                </a>
+              </div>
+            </li>
+            <!-- /.main-nav__item -->
+
+          </ul>
+          <button class="main-nav__burger">
+            <svg width="32" height="21">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+            </svg>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- /.header -->
+
+    <main class="page-view article-page">
+      <div class="article-page__container container">
+        <div class="article-page__wrapper">
+
+          <div class="article-page__content-container">
+
+            <div class="article-page__title-container">
+              <div class="article-page__breadcrumbs breadcrumbs">
+                <a href="main.html">Георесурсы /</a>
+                <a>Георесурсы Т.22.№3.2020</a>
+              </div>
+              <h2 class="article-page__title">Типы разрезов и перспективы нефтеносности баженовской свиты
+                в&nbsp;Надым-Обском междуречье</h2>
+              <p class="article-page__authors">А. Н. Ивойлов, К. Н. Кадеева, К. В. Константинопольский, Б. Р. Гуреев</p>
+
+              <ul class="article-page__settings-list">
+                <li class="article-page__settings-item">
+                  <p>10 апр 2020</p>
+                </li>
+                <li class="article-page__settings-item">
+                  <p>Open Access</p>
+                </li>
+                <li class="article-page__settings-item">
+                  <p><span class="bold color-decoration">25k</span> Accesses</p>
+                </li>
+                <li class="article-page__settings-item">
+                  <p><span class="bold color-decoration">234</span> Almetric</p>
+                </li>
+                <li class="article-page__settings-item">
+                  <p><span class="color-decoration">Metrics</span></p>
+                </li>
+                <li class="article-page__settings-item">
+                  <p>с. 2-10</p>
+                </li>
+              </ul>
+              <!-- /.article-page__settings-list -->
+
+              <div class="article-page__bottom-line">
+                <ul class="article-page__list-link">
+                  <li class="article-page__item-link">
+                    <p>Оригинальная статья
+                      <br>
+                      DOI <a class="color-decoration hover-line"
+                        href="https://doi.org/10.18599/grs.2020.3.2-11">https://doi.org/10.18599/grs.2020.3.2-11</a>
+                    </p>
+                  </li>
+                  <li class="article-page__item-link">
+                    <p>Open access
+                      <br>
+                      Under a <a class="color-decoration hover-line" href="#">Creative Commons license</a>
+                    </p>
+                  </li>
+                </ul>
+
+                <div class="article-page__sidebar">
+                  <div class="article-page__download-container">
+                    <p class="article-page__download-title">Скачать статью</p>
+                    <div class="article-page__download-list">
+                      <a class="article-page__download-btn" href="#" download="">
+                        <svg width="34" height="40">
+                          <use xlink:href="img/sprite.svg#icon-pdf"></use>
+                        </svg>
+                        <span>RUS, 3 mB</span>
+                      </a>
+                      <a class="article-page__download-btn" href="#" download="">
+                        <svg width="34" height="40">
+                          <use xlink:href="img/sprite.svg#icon-pdf"></use>
+                        </svg>
+                        <span>ENG, 3 mB</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="article-page__tabs-container">
+                    <ul class="article-page__tabs-list">
+                      <li class="article-page__tabs-item">
+                        <a class="article-page__tab tab active" href="#" data-tab="1">Аннотация</a>
+                      </li>
+                      <li class="article-page__tabs-item">
+                        <a class="article-page__tab tab" href="#" data-tab="2">Ключевые слова</a>
+                      </li>
+                      <li class="article-page__tabs-item">
+                        <a class="article-page__tab tab" href="#" data-tab="3">Текст</a>
+                      </li>
+                      <li class="article-page__tabs-item">
+                        <a class="article-page__tab tab" href="#" data-tab="4">Список литературы</a>
+                      </li>
+                      <li class="article-page__tabs-item">
+                        <a class="article-page__tab tab" href="#" data-tab="5">Сведения об авторах</a>
+                      </li>
+                      <li class="article-page__tabs-item">
+                        <a class="article-page__tab tab" href="#" data-tab="6">Финансирование</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /.article-page__sidebar -->
+
+                <button class="article-page__btn btn btn--blue btn-reset">Цитировать</button>
+              </div>
+              <!-- /.article-page__bottom-line -->
+
+            </div>
+            <!-- /.article-page__title-container -->
+
+            <div class="article-page__content content" data-content="1">
+
+              <div class="article-page__content-item">
+                <h3 class="article-page__subtitle">Подзаголовок</h3>
+                <div class="article-page__text">
+                  <p>В статье представлены результаты изучения геологического строения баженовской свиты в Надым-Обском
+                    междуречье Западной Сибири с целью прогноза нефтеносности этой черносланцевой толщи. В результате
+                    интерпретации широкого комплекса ГИС, представленного электрическим, радиоактивным и акустическим
+                    каротажем, с последующей увязкой этих результатов с палеонтологическими определениями микро- и
+                    макрофауны уточнено распространение салымского, нижневартовского и таркосалинского типов разрезов
+                    баженовской свиты, выделены переходные области между ними. Установлено, что таркосалинский тип
+                    распространен шире в западном направлении, чем было показано ранее и выделяется также на
+                    Вэнгаяхинской, Ярайнерской и других площадях. Нижневартовский тип, наоборот, имеет более узкое
+                    распространение и выделяется непосредственно в пределах одноименного свода и в южной части
+                    Варьеганско-Тагринского мегавыступа.</p>
+                  <p>На основе геологических, геохимических, геофизических критериев и результатов испытания на приток в
+                    глубоких скважинах составлена карта перспектив нефтеносности «классических» разрезов баженовской
+                    свиты. Выявлены региональные предпосылки (высокий катагенез органического вещества, значительные
+                    современные концентрации органического углерода и др.) для обнаружения в южных районах
+                    Ямало-Ненецкого
+                    автономного округа промышленных скоплений нефти в баженовской свите. Проанализированы результаты
+                    испытания на приток этих отложений в 70–90х гг. XX века; рекомендовано повторное, поинтервальное
+                    испытание этой толщи с использованием современных методов интенсификации притока. Обоснована
+                    необходимость лабораторного литологического, петрофизического, геохимического изучения керна
+                    баженовской свиты в южной части Ямало-Ненецкого автономного округа с целью определения ее
+                    литологического состава, выделения нефтематеринских и нефтепродуктивных интервалов, изучения
+                    структуры
+                    коллектора и характера насыщения его пустотного пространства, разработки рекомендаций к подсчету
+                    запасов нефти и созданию технологии ее рентабельной добычи.</p>
+                </div>
+              </div>
+              <!-- /.article-page__content-item -->
+
+              <div class="article-page__content-item">
+                <h3 class="article-page__subtitle">Подзаголовок</h3>
+                <div class="article-page__image-group">
+                  <div class="article-page__image-container">
+                    <picture>
+                      <source type="image/webp" srcset="
+                                    img/content/subtitle-image-001.webp,
+                                    img/content/subtitle-image-001@2x.webp 2x
+                      ">
+                      <img src="img/content/subtitle-image-001.jpg" srcset="img/content/subtitle-image-001@2x.jpg 2x"
+                        width="375" height="545px" alt="Обложка журнала Георесурсы Том 20 №1">
+                    </picture>
+                  </div>
+                  <div class="article-page__image-container">
+                    <picture>
+                      <source type="image/webp" srcset="
+                                    img/content/subtitle-image-002.webp,
+                                    img/content/subtitle-image-002@2x.webp 2x
+                      ">
+                      <img src="img/content/subtitle-image-002.jpg" srcset="img/content/subtitle-image-002@2x.jpg 2x"
+                        width="375" height="545px" alt="Обложка журнала Георесурсы Том 20 №1">
+                    </picture>
+                  </div>
+                </div>
+                <p class="article-page__image-description">Рис. 1. Карта распределения температур</p>
+                <div class="article-page__text">
+                  <p>на приток в глубоких скважинах составлена карта перспектив нефтеносности «классических» разрезов
+                    баженовской свиты. Выявлены региональные предпосылки (высокий катагенез органического вещества,
+                    значительные современные концентрации органического углерода и др.) для обнаружения в южных районах
+                    Ямало-Ненецкого автономного округа промышленных скоплений нефти в баженовской свите.
+                    Проанализированы результаты испытания на приток этих отложений в 70–90х гг. XX века; рекомендовано
+                    повторное, поинтервальное испытание этой толщи с использованием современных методов интенсификации
+                    притока. Обоснована необходимость лабораторного литологического, петрофизического, геохимического
+                    изучения керна баженовской свиты в южной части Ямало-Ненецкого автономного округа с целью
+                    определения ее литологического состава, выделения нефтематеринских и нефтепродуктивных интервалов,
+                    изучения структуры коллектора и характера насыщения его пустотного пространства, разработки
+                    рекомендаций к подсчету запасов нефти и созданию технологии ее рентабельной добычи.</p>
+                </div>
+              </div>
+              <!-- /.article-page__content-item -->
+
+            </div>
+            <!-- /.article-page__content -->
+
+            <div class="article-page__content content" data-content="2">
+              <div class="article-page__content-item">
+                <h3 class="article-page__subtitle">Ключевые слова</h3>
+                <div class="article-page__text">
+                  <p>Ключевые слова</p>
+                </div>
+              </div>
+              <!-- /.article-page__content-item -->
+            </div>
+            <!-- /.article-page__content -->
+
+            <div class="article-page__content content" data-content="3">
+              <div class="article-page__content-item">
+                <h3 class="article-page__subtitle">Текст</h3>
+                <div class="article-page__text">
+                  <p>Текст</p>
+                </div>
+              </div>
+              <!-- /.article-page__content-item -->
+            </div>
+            <!-- /.article-page__content -->
+
+            <div class="article-page__content content" data-content="4">
+
+              <div class="article-page__content-item">
+                <h3 class="article-page__subtitle">Список литературы</h3>
+                <div class="article-page__text">
+                  <p>Маргулис Л.С. (2009). <span class="bold">Нефтегеологическое районирование и оценка нефтегазовых
+                      ресурсов Дальневосточных морей. Нефтегазовая геология. Теория и практика.</span>
+                    <br>
+                    <a class="hover-line color-decoration"
+                      href="http://www.ngtp.ru/rub/5/23_2009.pdf">http://www.ngtp.ru/rub/5/23_2009.pdf</a>
+                  </p>
+                </div>
+
+                <div class="article-page__text">
+                  <p>Савицкий А.В. (2005). <span class="bold">Оценка перспектив нефтегазоносности шельфа Северного
+                      Сахалина на основе бассейнового моделирования.</span> Дис. канд. геол.-мин. наук. Москва, 143 с.
+                  </p>
+                </div>
+                <div class="article-page__text">
+                  <p>Ступакова А.В., Бурлин Ю.К. (2009). <span class="bold">История формирования осадочно-породных
+                      бассейнов шельфа российской Арктики. Тектоническое совещание РАН. Москва.</span>
+                  </p>
+                </div>
+              </div>
+              <!-- /.article-page__content-item -->
+
+              <div class="article-page__content-item">
+                <h3 class="article-page__subtitle">Список литературы</h3>
+                <ul class="article-page__list">
+
+                  <li class="article-page__item article-page__item--border-top">
+                    <span class="article-page__item-number">01</span>
+                    <p class="article-page__item-text">Маргулис Л.С. (2009). Нефтегеологическое районирование и оценка
+                      нефтегазовых ресурсов Дальневосточных морей. Нефтегазовая геология. Теория и практика.
+                      <br><a class="hover-line color-decoration"
+                        href="http://www.ngtp.ru/rub/5/23_2009.pdf">http://www.ngtp.ru/rub/5/23_2009.pdf</a>
+                    </p>
+                  </li>
+                  <!-- /.article-page__item -->
+
+                  <li class="article-page__item article-page__item--border-top">
+                    <span class="article-page__item-number">02</span>
+                    <p class="article-page__item-text">Савицкий А.В. (2005). Оценка перспектив нефтегазоносности шельфа
+                      Северного Сахалина на основе бассейнового моделирования. Дис. канд. геол.-мин. наук. Москва, 143
+                      с.</p>
+                  </li>
+                  <!-- /.article-page__item -->
+
+                  <li class="article-page__item article-page__item--border-top">
+                    <span class="article-page__item-number">03</span>
+                    <p class="article-page__item-text">Ступакова А.В., Бурлин Ю.К. (2009). История формирования
+                      осадочно-породных бассейнов шельфа российской Арктики. Тектоническое совещание РАН. Москва.</p>
+                  </li>
+                  <!-- /.article-page__item -->
+
+                </ul>
+              </div>
+              <!-- /.article-page__content-item -->
+
+              <div class="article-page__content-item">
+                <h3 class="article-page__subtitle">Список литературы</h3>
+                <ul class="article-page__list">
+
+                  <li class="article-page__item article-page__item--border-top">
+                    <p class="article-page__item-text">Маргулис Л.С. (2009). Нефтегеологическое районирование и оценка
+                      нефтегазовых ресурсов Дальневосточных морей. Нефтегазовая геология. Теория и практика.
+                      <br><a class="hover-line color-decoration"
+                        href="http://www.ngtp.ru/rub/5/23_2009.pdf">http://www.ngtp.ru/rub/5/23_2009.pdf</a>
+                    </p>
+                  </li>
+                  <!-- /.article-page__item -->
+
+                  <li class="article-page__item article-page__item--border-top">
+                    <p class="article-page__item-text">Савицкий А.В. (2005). Оценка перспектив нефтегазоносности шельфа
+                      Северного Сахалина на основе бассейнового моделирования. Дис. канд. геол.-мин. наук. Москва, 143
+                      с.</p>
+                  </li>
+                  <!-- /.article-page__item -->
+
+                  <li class="article-page__item article-page__item--border-top">
+                    <p class="article-page__item-text">Ступакова А.В., Бурлин Ю.К. (2009). История формирования
+                      осадочно-породных бассейнов шельфа российской Арктики. Тектоническое совещание РАН. Москва.</p>
+                  </li>
+                  <!-- /.article-page__item -->
+
+                </ul>
+              </div>
+              <!-- /.article-page__content-item -->
+
+            </div>
+            <!-- /.article-page__content -->
+
+            <div class="article-page__content content" data-content="5">
+              <div class="article-page__content-item">
+                <h3 class="article-page__subtitle">Сведения об авторах</h3>
+                <div class="article-page__text">
+                  <p>Сведения об авторах</p>
+                </div>
+              </div>
+              <!-- /.article-page__content-item -->
+            </div>
+            <!-- /.article-page__content -->
+
+            <div class="article-page__content content" data-content="6">
+              <div class="article-page__content-item">
+                <h3 class="article-page__subtitle">Финансирование</h3>
+                <div class="article-page__text">
+                  <p>Финансирование</p>
+                </div>
+              </div>
+              <!-- /.article-page__content-item -->
+            </div>
+            <!-- /.article-page__content -->
+
+          </div>
+          <!-- /.article-page__content -->
+        </div>
+        <!-- /.article-page__wrapper -->
+      </div>
+      <!-- /.article-page__container container -->
+    </main>
+    <!-- /.page-view -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__logo-container">
+          <a href="index.html" class="footer__logo">
+            <picture>
+              <source type="image/webp" srcset="
+                                          img/content/logo-georesursy.webp,
+                                          img/content/logo-georesursy@2x.webp 2x
+                            ">
+              <img src="img/content/logo-georesursy.png" srcset="img/content/logo-georesursy@2x.png 2x" width="69"
+                height="61" alt="Логотип Георесурсы">
+            </picture>
+          </a>
+          <div class="footer__text-container">
+            <h3 class="footer__title">Георесурсы</h3>
+            <p class="footer__text">ISSN 1608-5043 (Print)</p>
+            <p class="footer__text">ISSN 1608-5078 (Online)</p>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Редакционная коллегия</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Редакционная политика</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--lk">
+              <a href="#" class="footer__nav-link footer__nav-link--lk" data-modal="login">Личный кабинет</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Рецензирование</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Индексирование</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--archive">
+              <a href="archive.html" class="footer__nav-link">Архив</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">О журнале</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Для авторов</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--contacts">
+              <a href="#" class="footer__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__inputs">
+          <button class="footer__search-btn btn-reset" data-modal="search">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite.svg#icon-search-2"></use>
+            </svg>
+          </button>
+          <div class="footer__change-lang">
+            <div class="footer__input-box">
+              <input class="footer__radio-input visually-hidden" type="radio" name="lang-footer" id="lang-rus-footer"
+                checked>
+              <label class="footer__radio-label" for="lang-rus-footer">rus</label>
+            </div>
+            <div class="footer__input-box">
+              <input class="footer__radio-input visually-hidden" type="radio" name="lang-footer" id="lang-eng-footer">
+              <label class="footer__radio-label" for="lang-eng-footer">eng</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+
+    <div class="modal modal--login">
+      <div class="modal__overlay"></div>
+      <div class="main-nav__login login">
+        <div class="login__title">
+          <svg width="17" height="17">
+            <use xlink:href="img/sprite.svg#icon-lk"></use>
+          </svg>
+          <span>Личный кабинет</span>
+        </div>
+        <form class="login__form" action="#" method="post">
+          <div class="login__input-box">
+            <input type="text" name="login-name" id="login-name" placeholder="Логин">
+            <label class="visually-hidden" for="login-name">Введите логин</label>
+          </div>
+          <div class="login__input-box">
+            <input type="password" name="login-password" id="login-password" placeholder="Пароль">
+            <label class="visually-hidden" for="login-password">Введите пароль</label>
+          </div>
+          <div class="login__btn-group">
+            <a href="#" class="login__btn btn btn--underline btn-reset">
+              <span>Напомнить</span>
+            </a>
+            <button class="login__btn btn btn--white btn-reset" type="submit">Войти</button>
+          </div>
+        </form>
+        <a href="#" class="login__btn-reg btn btn--underline btn-reset">
+          <span>Регистрация</span>
+          <svg width="30" height="8">
+            <use xlink:href="img/sprite.svg#icon-arrow-right-long"></use>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+    <!-- /.modal modal--login -->
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
