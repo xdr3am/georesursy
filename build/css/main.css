@@ -4936,6 +4936,9 @@ ul {
   @media (max-width: 767px) {
     .magazine-view__title-container {
       margin-bottom: 8px; } }
+  @media (max-width: 767px) {
+    .magazine-view__title-container--pr80 {
+      padding-right: 80px; } }
 
 .magazine-view__breadcrumbs {
   margin-bottom: 18px; }
@@ -4986,6 +4989,11 @@ ul {
   margin-left: -100px;
   width: 856px;
   margin-bottom: 35px; }
+  .magazine-view__main-image-container--no-image .magazine-view__date {
+    top: -120px; }
+    @media (max-width: 767px) {
+      .magazine-view__main-image-container--no-image .magazine-view__date {
+        top: -70px; } }
   .magazine-view__main-image-container img {
     vertical-align: middle;
     width: 100%;

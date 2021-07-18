@@ -26,6 +26,12 @@
   @include viewport--sm {
     margin-bottom: 8px;
   }
+
+  &--pr80 {
+    @include viewport--sm {
+      padding-right: 80px;
+    }
+  }
 }
 
 .magazine-view__breadcrumbs {
@@ -77,6 +83,16 @@
   margin-left: -100px;
   width: 856px;
   margin-bottom: 35px;
+
+  &--no-image {
+    .magazine-view__date {
+      top: -120px;
+
+      @include viewport--sm {
+        top: -70px;
+      }
+    }
+  }
 
   img {
     vertical-align: middle;
