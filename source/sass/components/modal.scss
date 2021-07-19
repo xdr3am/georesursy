@@ -23,7 +23,8 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 
-  &--login {
+  &--login,
+  &--registration {
     transform: translateY(10px);
 
     &--active {
@@ -71,12 +72,6 @@
       width: 100%;
       padding: 80px 40px;
     }
-  }
-
-  &__close-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
   }
 
   &--responsive {

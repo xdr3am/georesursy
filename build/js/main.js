@@ -280,6 +280,8 @@ if (swiper2) {
   const modalSearchBtns = document.querySelectorAll('[data-modal="search"]');
   const modalLogin = document.querySelector('.modal--login');
   const modalLoginBtns = document.querySelectorAll('[data-modal="login"]');
+  const modalRegistration = document.querySelector('.modal--registration');
+  const modalRegistrationBtns = document.querySelectorAll('[data-modal="registration"]');
 
   // аргументы setupModal(modal, closeCallback, modalBtns, openCallback, noPrevDefault, preventScrollLock)
   // возможна инициализация только с первыми аргументом,
@@ -301,6 +303,9 @@ if (swiper2) {
     }
     if (modalLogin && modalLoginBtns.length) {
       setupModal(modalLogin, false, modalLoginBtns);
+    }
+    if (modalRegistration && modalRegistrationBtns.length) {
+      setupModal(modalRegistration, false, modalRegistrationBtns);
     }
   };
 

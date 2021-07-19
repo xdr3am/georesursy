@@ -322,7 +322,7 @@
             <button class="login__btn btn btn--white btn-reset" type="submit">Войти</button>
           </div>
         </form>
-        <a href="#" class="login__btn-reg btn btn--underline btn-reset">
+        <a href="#" class="login__btn-reg btn btn--underline btn-reset modal__close-btn" data-modal="registration">
           <span>Регистрация</span>
           <svg width="30" height="8">
             <use xlink:href="img/sprite.svg#icon-arrow-right-long"></use>
@@ -332,6 +332,37 @@
 
     </div>
     <!-- /.modal modal--login -->
+
+    <div class="modal modal--registration">
+      <div class="modal__overlay"></div>
+      <div class="main-nav__login login">
+        <div class="login__title">
+          <svg width="17" height="17">
+            <use xlink:href="img/sprite.svg#icon-lk"></use>
+          </svg>
+          <span>Регистрация</span>
+        </div>
+        <form class="login__form" action="#" method="post">
+          <div class="login__input-box">
+            <input type="text" name="reg-name" id="reg-name" placeholder="E-mail">
+            <label class="visually-hidden" for="reg-name">Введите логин</label>
+          </div>
+          <div class="login__input-box">
+            <input type="password" name="reg-password" id="reg-password" placeholder="Пароль">
+            <label class="visually-hidden" for="reg-password">Введите пароль</label>
+          </div>
+          <div class="login__btn-group">
+            <button class="login__btn btn btn--white btn-reset" type="submit">Зарегистрироваться</button>
+          </div>
+        </form>
+        <a href="#" class="login__btn-reg btn btn--underline btn-reset modal__close-btn" data-modal="login">
+          <span>Вход</span>
+        </a>
+      </div>
+
+    </div>
+    <!-- /.modal modal--registration -->
+
   </div>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>

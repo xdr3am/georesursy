@@ -1337,10 +1337,10 @@ ul {
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   -ms-overflow-style: none;
   scrollbar-width: none; }
-  .modal--login {
+  .modal--login, .modal--registration {
     -webkit-transform: translateY(10px);
             transform: translateY(10px); }
-    .modal--login--active {
+    .modal--login--active, .modal--registration--active {
       -webkit-transform: translateY(0);
               transform: translateY(0); }
   .modal::-webkit-scrollbar {
@@ -1379,10 +1379,6 @@ ul {
       .modal__content {
         width: 100%;
         padding: 80px 40px; } }
-  .modal__close-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px; }
   .modal--responsive .modal__content {
     width: 100%; }
   .modal--fit-content .modal__content {
