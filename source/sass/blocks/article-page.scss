@@ -2,7 +2,7 @@
   position: relative;
   background: url("../img/bg/bg-lines.png") no-repeat;
   background-position: top;
-  background-size: 100% 764px;
+  background-size: 764px cover;
 }
 
 .article-page__container {
@@ -19,7 +19,6 @@
   position: relative;
   display: flex;
   align-items: flex-start;
-  padding-right: 260px;
 
   @include viewport--sm {
     padding: 0;
@@ -31,6 +30,11 @@
   flex-direction: column;
   width: 100%;
   max-width: 817px;
+  padding-right: 30px;
+
+  @include viewport--sm {
+    padding-right: 0;
+  }
 }
 
 .article-page__title-container {
@@ -186,12 +190,8 @@
 }
 
 .article-page__content {
-  display: none;
-  flex-direction: column;
-}
-
-.article-page__content.open {
   display: flex;
+  flex-direction: column;
 }
 
 .article-page__content-item {
@@ -251,15 +251,23 @@
 }
 
 .article-page__sidebar {
-  position: absolute;
+  position: sticky;
   top: 40px;
-  right: -47px;
   width: 100%;
   max-width: 272px;
 
   @include viewport--sm {
-    position: static;
-    max-width: none;
+    display: none;
+  }
+
+  &--mobile {
+    display: none;
+
+    @include viewport--sm {
+      display: block;
+      position: static;
+      max-width: none;
+    }
   }
 }
 

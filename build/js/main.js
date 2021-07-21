@@ -316,25 +316,21 @@ if (swiper2) {
 'use strict';
 
 (function () {
-  const tabsBtn = document.querySelectorAll('.tab');
-  const tabsContent = document.querySelectorAll('.content');
+  window.addEventListener('scroll', () => {
+    let scrollDistance = window.scrollY;
 
-  if (tabsBtn) {
-    for (let i = 0; i < tabsBtn.length; i++) {
-      tabsBtn[i].addEventListener('click', function (evt) {
-        evt.preventDefault();
-        
-        for (let item of tabsBtn) {
-          item.classList.remove('active');
-        }
-        for (let item of tabsContent) {
-          item.classList.remove('open');
-        }
+    if (window.innerWidth > 768) {
+      document.querySelectorAll('.content').forEach((el, i) => {
+        if (el.offsetTop <= scrollDistance) {
+          document.querySelectorAll('.article-page__tab').forEach((el) => {
+            if (el.classList.contains('active')) {
+              el.classList.remove('active');
+            }
+          });
 
-        const tabContent = document.querySelector('[data-content="' + (i + 1) + '"]');
-        tabContent.classList.add('open');
-        tabsBtn[i].classList.add('active');
-      })
+          document.querySelectorAll('.desktop-tab-item')[i].querySelector('.article-page__tab').classList.add('active');
+        }
+      });
     }
-  }
+  });
 })();
