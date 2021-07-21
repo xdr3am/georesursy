@@ -79,6 +79,14 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  p {
+    margin-right: 20px;
+
+    @include viewport--sm {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .file__btn {
@@ -102,5 +110,10 @@
 
   @include viewport--sm {
     margin-bottom: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
   }
 }

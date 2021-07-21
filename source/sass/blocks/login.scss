@@ -72,12 +72,18 @@
     font-size: 14px;
     line-height: 18px;
     color: $color-font-alt;
+    outline: none;
 
     &::placeholder {
       font-weight: 500;
       font-size: 14px;
       line-height: 18px;
       color: $color-font-alt;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 1px $color-default-white;
     }
   }
 }

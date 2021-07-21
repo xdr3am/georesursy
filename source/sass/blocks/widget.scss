@@ -48,6 +48,16 @@
     transition: $default-transition-settings;
   }
 
+  &--dark {
+    opacity: 0.5;
+    transition: $default-transition-settings;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
   &:hover,
   &:focus {
     img {

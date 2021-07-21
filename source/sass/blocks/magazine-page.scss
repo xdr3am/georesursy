@@ -21,7 +21,7 @@
 }
 
 .magazine-page__title-container {
-  margin-bottom: 18px;
+  margin-bottom: 38px;
 
   @include viewport--sm {
     margin-bottom: 26px;
@@ -139,10 +139,19 @@
 .magazine-page__files-list {
   display: flex;
   flex-direction: column;
+  margin-top: -38px;
+
+  @include viewport--sm {
+    margin: 0;
+  }
 }
 
 .magazine-page__file {
   margin-bottom: 49px;
+
+  &:first-of-type {
+    margin-bottom: 15px;
+  }
 
   &:last-of-type {
     margin-bottom: 0;

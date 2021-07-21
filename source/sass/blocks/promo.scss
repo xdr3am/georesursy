@@ -24,7 +24,7 @@
 
   @include viewport--sm {
     flex-direction: column;
-    padding-top: 97px;
+    padding-top: 130px;
     padding-bottom: 42px;
   }
 }
@@ -112,7 +112,7 @@
 
   @include viewport--sm {
     position: absolute;
-    top: 183px;
+    top: 213px;
     left: 50%;
     transform: translateX(-50%);
     max-width: 500px;

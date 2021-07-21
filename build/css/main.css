@@ -1116,6 +1116,16 @@ html {
 .color-decoration {
   color: #033a9f; }
 
+.mt40 {
+  margin-top: 40px; }
+
+input {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
 .container {
   width: 100%;
   max-width: 1220px;
@@ -1547,6 +1557,7 @@ html {
   @media (max-width: 767px) {
     .main-nav__item--site-nav {
       position: fixed;
+      z-index: 100;
       width: 100vw;
       height: 100vh;
       z-index: 1000;
@@ -1658,6 +1669,12 @@ html {
         color: #ffffff; } }
   .main-nav__item--site-nav .main-nav__link:active {
     opacity: 0.5; }
+
+.main-nav__link-item--only-mobile {
+  display: none; }
+  @media (max-width: 767px) {
+    .main-nav__link-item--only-mobile {
+      display: block; } }
 
 .main-nav__sub-list {
   position: absolute;
@@ -1858,7 +1875,10 @@ html {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       -webkit-box-shadow: 0px 12px 13px rgba(6, 69, 231, 0.1);
-              box-shadow: 0px 12px 13px rgba(6, 69, 231, 0.1); }
+              box-shadow: 0px 12px 13px rgba(6, 69, 231, 0.1);
+      outline: none;
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease; }
       .main-nav__item--inputs .main-nav__input-search input::-webkit-input-placeholder {
         position: relative;
         font-family: "SF UI Text", "Arial", sans-serif;
@@ -1899,6 +1919,9 @@ html {
         line-height: 25px;
         text-align: center;
         color: #033a9f; }
+      .main-nav__item--inputs .main-nav__input-search input:hover, .main-nav__item--inputs .main-nav__input-search input:focus {
+        -webkit-box-shadow: 0px 12px 13px rgba(6, 70, 231, 0.242);
+                box-shadow: 0px 12px 13px rgba(6, 70, 231, 0.242); }
 
 .main-nav__item--user-nav {
   -webkit-box-orient: vertical;
@@ -2088,7 +2111,8 @@ html {
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-    color: #ffffff; }
+    color: #ffffff;
+    outline: none; }
     .login__input-box input::-webkit-input-placeholder {
       font-weight: 500;
       font-size: 14px;
@@ -2114,6 +2138,9 @@ html {
       font-size: 14px;
       line-height: 18px;
       color: #ffffff; }
+    .login__input-box input:hover, .login__input-box input:focus {
+      -webkit-box-shadow: 0 0 0 1px #ffffff;
+              box-shadow: 0 0 0 1px #ffffff; }
 
 .login__btn-group {
   display: -webkit-box;
@@ -2433,7 +2460,7 @@ html {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding-top: 97px;
+      padding-top: 130px;
       padding-bottom: 42px; } }
 
 .promo__text-container {
@@ -2504,7 +2531,7 @@ html {
   @media (max-width: 767px) {
     .promo__slider {
       position: absolute;
-      top: 183px;
+      top: 213px;
       left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
@@ -2655,6 +2682,12 @@ html {
     opacity: 0.8;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease; }
+  .widget__logo--dark {
+    opacity: 0.5;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease; }
+    .widget__logo--dark:hover, .widget__logo--dark:focus {
+      opacity: 1; }
   .widget__logo:hover img, .widget__logo:focus img {
     -webkit-filter: none;
     -moz-filter: none;
@@ -2709,7 +2742,7 @@ html {
   position: relative;
   z-index: 2;
   padding-top: 89px;
-  padding-bottom: 25px; }
+  padding-bottom: 45px; }
   @media (max-width: 767px) {
     .articles__container {
       padding-top: 33px;
@@ -3469,7 +3502,7 @@ html {
 
 .archive__text {
   position: absolute;
-  z-index: 10;
+  z-index: 1;
   left: 50%;
   bottom: 20px;
   -webkit-transform: translate(-50%, 0);
@@ -3519,7 +3552,7 @@ html {
           flex-direction: column; }
 
 .magazine-page__title-container {
-  margin-bottom: 18px; }
+  margin-bottom: 38px; }
   @media (max-width: 767px) {
     .magazine-page__title-container {
       margin-bottom: 26px; } }
@@ -3629,10 +3662,16 @@ html {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  margin-top: -38px; }
+  @media (max-width: 767px) {
+    .magazine-page__files-list {
+      margin: 0; } }
 
 .magazine-page__file {
   margin-bottom: 49px; }
+  .magazine-page__file:first-of-type {
+    margin-bottom: 15px; }
   .magazine-page__file:last-of-type {
     margin-bottom: 0; }
   @media (max-width: 767px) {
@@ -3723,6 +3762,11 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .file__btn-group p {
+    margin-right: 20px; }
+    @media (max-width: 767px) {
+      .file__btn-group p {
+        margin-bottom: 10px; } }
 
 .file__btn {
   display: -webkit-box;
@@ -3745,6 +3789,8 @@ html {
   @media (max-width: 767px) {
     .file__btn {
       margin-bottom: 10px; } }
+  .file__btn:hover, .file__btn:focus {
+    text-decoration: underline; }
 
 .authors {
   position: relative;

@@ -74,6 +74,7 @@
 
   @include viewport--sm {
     position: fixed;
+    z-index: 100;
     width: 100vw;
     height: 100vh;
     z-index: 1000;
@@ -180,6 +181,14 @@
 
   &:active {
     opacity: 0.5;
+  }
+}
+
+.main-nav__link-item--only-mobile {
+  display: none;
+
+  @include viewport--sm {
+    display: block;
   }
 }
 
@@ -376,6 +385,8 @@
       border: 1px solid $color-decoration;
       box-sizing: border-box;
       box-shadow: 0px 12px 13px rgba(6, 69, 231, 0.1);
+      outline: none;
+      transition: $default-transition-settings;
 
       &::placeholder {
         position: relative;
@@ -385,6 +396,11 @@
         line-height: 25px;
         text-align: center;
         color: $color-decoration;
+      }
+
+      &:hover,
+      &:focus {
+        box-shadow: 0px 12px 13px rgba(6, 70, 231, 0.242);
       }
     }
   }
