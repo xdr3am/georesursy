@@ -18,7 +18,15 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  // overflow-x: hidden;
+  overflow-x: hidden;
+
+  &--visible {
+    overflow-x: visible;
+
+    @include viewport--sm {
+      overflow-x: hidden;
+    }
+  }
 
   .header,
   .footer {

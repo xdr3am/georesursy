@@ -1,0 +1,28 @@
+.main-page {
+  position: relative;
+}
+
+.main-page__sidebar-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-page__content {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-page__widget {
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  padding-top: 200px;
+
+  @include viewport--lg {
+    padding-top: 450px;
+  }
+
+  @include viewport--md {
+    display: none;
+  }
+}

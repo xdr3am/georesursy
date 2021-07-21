@@ -1,9 +1,14 @@
 .promo {
-  position: relative;
-  background: url("../img/bg/bg-lines.png") no-repeat;
-  background-position: center;
-  background-size: cover;
-  overflow-x: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 764px;
+    background: url("../img/bg/bg-lines.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .promo__container {
@@ -155,15 +160,5 @@
 
   &:active {
     transform: scale(0.7);
-  }
-}
-
-.promo__widget {
-  margin-top: 12px;
-  margin-left: auto;
-  margin-right: 0;
-
-  @include viewport--lg {
-    margin: 0;
   }
 }

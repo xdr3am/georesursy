@@ -143,7 +143,7 @@
   .article__image-container {
     height: 142px;
     overflow: hidden;
-    
+
 
     img {
       width: 100%;
@@ -188,7 +188,7 @@
     }
 
     @include viewport--sm {
-      word-wrap: break-word;
+      hyphens: auto;
       font-size: 14px;
       line-height: 19px;
     }

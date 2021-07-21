@@ -1,9 +1,20 @@
 .articles {
-  position: relative;
-  background-color: #f5f9fa;
+  // position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    height: 1500px;
+    background-color: #f5f9fa;
+  }
 }
 
 .articles__container {
+  position: relative;
+  z-index: 2;
   padding-top: 89px;
   padding-bottom: 25px;
 

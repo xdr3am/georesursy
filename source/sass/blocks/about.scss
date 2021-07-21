@@ -1,11 +1,21 @@
 .about {
-  position: relative;
-  background: url("../img/bg/bg-lines.png") no-repeat;
-  background-position: center;
-  background-size: cover;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    height: 1000px;
+    background: url("../img/bg/bg-lines.png") no-repeat;
+    background-color: $color-default-white;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .about__container {
+  position: relative;
+  z-index: 3;
   padding-top: 97px;
   padding-bottom: 69px;
 
