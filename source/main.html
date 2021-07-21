@@ -404,7 +404,7 @@
                         <!-- /.articles__item article -->
 
                       </ul>
-                      <a href="#" class="articles__btn btn btn--light btn-reset">
+                      <a href="#" class="articles__btn btn btn--light btn-reset hover-line">
                         <span>Все статьи</span>
                       </a>
                     </div>
@@ -631,7 +631,7 @@
                   <!-- /.news__item article article--news -->
 
                 </ul>
-                <a href="#" class="news__btn btn btn--light btn-reset">
+                <a href="#" class="news__btn btn btn--light btn-reset hover-line">
                   <span>Все новости</span>
                 </a>
               </div>
@@ -846,9 +846,9 @@
           <a href="index.html" class="footer__logo">
             <picture>
               <source type="image/webp" srcset="
-                                          img/content/logo-georesursy.webp,
-                                          img/content/logo-georesursy@2x.webp 2x
-                            ">
+                            img/content/logo-georesursy.webp,
+                            img/content/logo-georesursy@2x.webp 2x
+              ">
               <img src="img/content/logo-georesursy.png" srcset="img/content/logo-georesursy@2x.png 2x" width="69"
                 height="61" alt="Логотип Георесурсы">
             </picture>
@@ -891,11 +891,20 @@
           </ul>
         </div>
         <div class="footer__inputs">
-          <button class="footer__search-btn btn-reset" data-modal="search">
-            <svg width="20" height="20">
-              <use xlink:href="img/sprite.svg#icon-search-2"></use>
-            </svg>
-          </button>
+          <div class="footer__inputs-line">
+            <button class="footer__search-btn btn-reset" data-modal="search">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-search-2"></use>
+              </svg>
+            </button>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link">
+                <svg width="30" height="30">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
           <div class="footer__change-lang">
             <div class="footer__input-box">
               <input class="footer__radio-input visually-hidden" type="radio" name="lang-footer" id="lang-rus-footer"

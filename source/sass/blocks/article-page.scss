@@ -86,7 +86,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  border: 1px solid #cdeffa;
+  border: 1px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 5px;
   margin-bottom: 19px;
@@ -392,7 +392,6 @@
 
 .article-page__tab.active {
   background-color: $color-decoration;
-  box-shadow: 0px 2px 3px rgba(6, 177, 231, 0.4);
   color: $color-font-alt;
 }
 

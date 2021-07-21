@@ -24,8 +24,8 @@
   margin-right: 18px;
 
   @include viewport--sm {
-    width: 40px;
-    height: 35px;
+    width: 60px;
+    height: 50px;
     margin: 0;
     margin-right: 5px;
   }
@@ -301,7 +301,7 @@
   @include viewport--sm {
     position: absolute;
     top: 26px;
-    left: 46px;
+    left: 64px;
     flex-direction: row;
   }
 
@@ -323,7 +323,6 @@
     background-color: transparent;
     color: $color-decoration;
     text-decoration: underline;
-    border-radius: 3px;
     cursor: pointer;
     transition: $default-transition-settings;
 

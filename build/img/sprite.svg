@@ -74,4 +74,8 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 7" id="icon-arrow-down">
     <path d="M1 1l4 4 2-2 2-2" stroke="#033A9F" stroke-width="2"></path>
   </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-facebook">
+    <rect width="24" height="24" rx="12"></rect>
+    <path d="M12.801 20v-7.3h2.45l.367-2.844H12.8V8.041c0-.823.229-1.384 1.41-1.384l1.506-.001V4.112A20.19 20.19 0 0013.522 4c-2.171 0-3.658 1.325-3.658 3.76v2.097H7.408v2.845h2.456V20h2.937z" fill="#fff"></path>
+  </symbol>
 </svg>
