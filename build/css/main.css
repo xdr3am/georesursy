@@ -4022,11 +4022,15 @@ input {
   line-height: 24px;
   color: #06b1e7; }
 
-.article-page {
-  position: relative;
+.article-page::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 764px;
   background: url("../img/bg/bg-lines.png") no-repeat;
   background-position: top;
-  background-size: 764px cover; }
+  background-size: cover; }
 
 .article-page__container {
   padding-top: 190px;

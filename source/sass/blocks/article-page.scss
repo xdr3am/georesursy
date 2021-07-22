@@ -1,8 +1,14 @@
 .article-page {
-  position: relative;
-  background: url("../img/bg/bg-lines.png") no-repeat;
-  background-position: top;
-  background-size: 764px cover;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 764px;
+    background: url("../img/bg/bg-lines.png") no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
 }
 
 .article-page__container {
