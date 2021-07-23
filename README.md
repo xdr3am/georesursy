@@ -1,3 +1,6 @@
+# Опубликованная версия:
+<a href="https://xdr3am.github.io/georesursy/build/index.html">Перейти на разводящую страницу</a>
+
 # Gulp template
 ## Основные команды для работы
 * Установка - `npm i`
