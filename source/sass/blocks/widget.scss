@@ -5,7 +5,7 @@
   width: 100%;
   max-width: 200px;
 
-  @include viewport--md {
+  @include viewport--lg {
     display: none;
   }
 }

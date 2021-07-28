@@ -30,6 +30,15 @@ if (swiper1) {
       768: {
         coverflowEffect: {
           rotate: 0,
+          stretch: 550,
+          depth: 150,
+          modifier: 1,
+          slideShadows: false
+        }
+      },
+      1200: {
+        coverflowEffect: {
+          rotate: 0,
           stretch: 151,
           depth: 200,
           modifier: 2,
